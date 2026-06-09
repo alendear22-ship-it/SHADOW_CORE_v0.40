@@ -1,0 +1,65 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="SHADOW CORE"
+config/description="Technical MVP / vertical slice generated from shadow_core_design_rules_v0_3.json"
+run/main_scene="res://scenes/main/main_menu.tscn"
+config/features=PackedStringArray("4.6")
+
+[autoload]
+
+DataRegistry="*res://autoloads/data_registry.gd"
+EventBus="*res://autoloads/event_bus.gd"
+EffectVisualSystem="*res://autoloads/effect_visual_system.gd"
+ProceduralIconFactory="*res://autoloads/procedural_icon_factory.gd"
+SaveManager="*res://autoloads/save_manager.gd"
+MetaProgression="*res://autoloads/meta_progression.gd"
+MetaCurrencyManager="*res://autoloads/meta_currency_manager.gd"
+EssenceBank="*res://autoloads/essence_bank.gd"
+EssenceAutoScaling="*res://autoloads/essence_auto_scaling.gd"
+SoulAshManager="*res://autoloads/soul_ash_manager.gd"
+StatUpgradeSystem="*res://autoloads/stat_upgrade_system.gd"
+AltarManager="*res://autoloads/altar_manager.gd"
+AltarCardGenerator="*res://autoloads/altar_card_generator.gd"
+AbilitySlotManager="*res://autoloads/ability_slot_manager.gd"
+BossAbilitySystem="*res://autoloads/boss_ability_system.gd"
+MobWeakAbilitySystem="*res://autoloads/mob_weak_ability_system.gd"
+BossRewardManager="*res://autoloads/boss_reward_manager.gd"
+RunRouteManager="*res://autoloads/run_route_manager.gd"
+OptionalBossManager="*res://autoloads/optional_boss_manager.gd"
+RunManager="*res://autoloads/run_manager.gd"
+BossChoiceManager="*res://autoloads/boss_choice_manager.gd"
+RunFlow="*res://autoloads/run_flow.gd"
+SpawnDirector="*res://autoloads/spawn_director.gd"
+WaveDirector="*res://autoloads/wave_director.gd"
+CombatSystem="*res://autoloads/combat_system.gd"
+ReactionSystem="*res://autoloads/reaction_system.gd"
+AbilityManager="*res://autoloads/ability_manager.gd"
+ProjectilePool="*res://autoloads/projectile_pool.gd"
+BossController="*res://autoloads/boss_controller.gd"
+DeveloperTools="*res://autoloads/developer_tools.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
