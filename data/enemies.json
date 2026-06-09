@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "id": "ENEMY_KR_ORC_FIGHTER",
+      "name": "Орк-боец",
+      "faction": "Крушители",
+      "creature_type": "Орк-боец",
+      "type": "Обычный ближний враг",
+      "role": "Базовый преследователь / давление числом",
+      "danger": "Низкая-средняя",
+      "base_stats": {
+        "hp": 45.0,
+        "movement_speed_m_per_sec": 3.6,
+        "armor": 0,
+        "damage_profile": "низкий-средний физический",
+        "attack_range_m": 1.2,
+        "attack_interval_seconds": 1.4,
+        "essence_reward": "1 эссенция Орка-бойца",
+        "essence_amount": 1
+      },
+      "behavior": {
+        "priority": "приблизиться → ударить → короткая пауза → снова преследовать",
+        "design_note": "Не умный юнит. Его задача — заполнение волны и базовое давление."
+      },
+      "attacks": [
+        {
+          "name": "Рубящий удар",
+          "telegraph_seconds": 0.35,
+          "shape": "дуга 70°",
+          "range_m": 1.2,
+          "damage": "низкий-средний физический"
+        }
+      ],
+      "wave_role": [
+        "60% основной массы Крушителей.",
+        "Хорошо работает пачками по 4–8.",
+        "Опасен числом, а не индивидуально."
+      ],
+      "faction_id": "FACTION_KRUSHERS",
+      "faction_name": "Крушители",
+      "creature_type_id": "CREATURE_KR_ORC_FIGHTER",
+      "scene_path": "res://scenes/enemies/orc_fighter.tscn",
+      "ai_type": "chaser",
+      "is_fully_playable_in_mvp": true,
+      "threat_weight": 1.0,
+      "implemented_in_patch_i": true,
+      "runtime_note": "Patch I: generic playable implementation for multi-floor progression."
+    },
+    {
+      "id": "ENEMY_KR_ORC_WARRIOR",
+      "name": "Орк-воин",
+      "faction": "Крушители",
+      "creature_type": "Орк-воин",
+      "type": "Тяжёлый ближний враг",
+      "role": "Бронированный давящий юнит / anchor enemy",
+      "danger": "Средняя",
+      "base_stats": {
+        "hp": 80.0,
+        "movement_speed_m_per_sec": 2.8,
+        "armor": 12,
+        "damage_profile": "средний-высокий физический",
+        "attack_range_m": 1.5,
+        "attack_interval_seconds": 1.8,
+        "essence_reward": "2 эссенции Орка-воина",
+        "essence_amount": 2
+      },
+      "behavior": {
+        "priority": "медленно сближаться → вынуждать менять маршрут → наносить тяжёлые удары",
+        "design_note": "Роль — занять пространство, а не догнать."
+      },
+      "attacks": [
+        {
+          "name": "Тяжёлый удар",
+          "telegraph_seconds": 0.75,
+          "shape": "прямоугольник перед врагом",
+          "range_m": 1.8,
+          "width_m": 1.2,
+          "damage": "высокий физический",
+          "recovery_seconds": 0.55
+        },
+        {
+          "name": "Броневой шаг",
+          "condition": "игрок держит дистанцию больше 3.5 м в течение 2 сек.",
+          "telegraph_seconds": 0.6,
+          "lunge_distance_m": 2,
+          "damage": "средний",
+          "cooldown_seconds": 6
+        }
+      ],
+      "wave_role": [
+        "10–25% состава Крушителей.",
+        "Центр давления, вокруг которого мелкие орки зажимают игрока."
+      ],
+      "faction_id": "FACTION_KRUSHERS",
+      "faction_name": "Крушители",
+      "creature_type_id": "CREATURE_KR_ORC_WARRIOR",
+      "scene_path": "res://scenes/enemies/enemy_base.tscn",
+      "ai_type": "chaser",
+      "is_fully_playable_in_mvp": true,
+      "threat_weight": 1.7,
+      "implemented_in_patch_i": true,
+      "runtime_note": "Patch I: generic playable implementation for multi-floor progression."
+    },
+    {
+      "id": "ENEMY_KR_ORC_COMMANDER",
+      "name": "Орк-командир",
+      "faction": "Крушители",
+      "creature_type": "Орк-командир",
+      "type": "Тактический враг поддержки",
+      "role": "Баф толпы / приоритетная цель",
+      "danger": "Средняя-высокая",
+      "base_stats": {
+        "hp": 65.0,
+        "movement_speed_m_per_sec": 3.1,
+        "armor": 5,
+        "damage_profile": "средний физический",
+        "attack_range_m": 1.4,
+        "attack_interval_seconds": 1.6,
+        "essence_reward": "3 эссенции Орка-командира",
+        "essence_amount": 3
+      },
+      "behavior": {
+        "priority": "держаться за группой → бафать ближайших Крушителей → атаковать, если игрок подошёл",
+        "design_note": "Меняет поведение толпы и должен быть целью фокуса."
+      },
+      "abilities": [
+        {
+          "name": "Приказ наступления",
+          "cooldown_seconds": 8,
+          "radius_m": 4,
+          "effect": "Ближайшие 4 врага-Крушителя получают +12% скорости движения на 4 сек.",
+          "limits": [
+            "Не стакается от нескольких командиров.",
+            "Если несколько командиров рядом, применяется сильнейший/последний баф."
+          ]
+        },
+        {
+          "name": "Метка добычи",
+          "cooldown_seconds": 10,
+          "effect": "Командир отмечает игрока на 4 сек.; ближайшие Орки-бойцы получают +10% скорости атаки.",
+          "limits": [
+            "Одновременно на игроке только 1 Метка добычи."
+          ]
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Командирский рубеж",
+          "telegraph_seconds": 0.45,
+          "shape": "короткий удар перед собой",
+          "damage": "средний физический"
+        }
+      ],
+      "wave_role": [
+        "5–15% состава Крушителей.",
+        "1 командир усиливает пачку; 3 командира могут сломать баланс."
+      ],
+      "faction_id": "FACTION_KRUSHERS",
+      "faction_name": "Крушители",
+      "creature_type_id": "CREATURE_KR_ORC_COMMANDER",
+      "scene_path": "res://scenes/enemies/enemy_base.tscn",
+      "ai_type": "skirmisher",
+      "is_fully_playable_in_mvp": true,
+      "threat_weight": 1.9,
+      "implemented_in_patch_i": true,
+      "runtime_note": "Patch I: generic playable implementation for multi-floor progression."
+    },
+    {
+      "id": "ENEMY_PR_WATER_SLIME",
+      "name": "Водный слайм",
+      "faction": "Природа",
+      "creature_type": "Водный слайм",
+      "type": "Обычный контролирующий враг",
+      "role": "Замедление, лужи, контроль маршрутов",
+      "danger": "Низкая-средняя",
+      "base_stats": {
+        "hp": 35.0,
+        "movement_speed_m_per_sec": 3.0,
+        "armor": 0,
+        "damage_profile": "низкий магический",
+        "attack_range_m": 3.5,
+        "attack_interval_seconds": 2.0,
+        "essence_reward": "1 эссенция Водного слайма",
+        "essence_amount": 1
+      },
+      "behavior": {
+        "priority": "держать среднюю дистанцию → плевать водой → создавать лужи на маршруте → отступать при сближении",
+        "limits": [
+          "Не бесконечно кайтит игрока.",
+          "Если игрок подошёл, слайм уязвим."
+        ]
+      },
+      "attacks": [
+        {
+          "name": "Водяной плевок",
+          "telegraph_seconds": 0.45,
+          "projectile": "летит в текущую позицию игрока",
+          "range_m": 3.5,
+          "damage": "низкий магический",
+          "after_effect": "при попадании/промахе создаёт водную лужу"
+        }
+      ],
+      "zones": [
+        {
+          "name": "Водная лужа",
+          "radius_m": 1.4,
+          "duration_seconds": 3,
+          "effect": "замедление игрока на 15%",
+          "limits": [
+            "Лужи не стакают замедление.",
+            "Максимальное замедление от обычных водных луж: 25%.",
+            "Не больше 5 активных луж от одной группы на экране."
+          ]
+        }
+      ],
+      "wave_role": [
+        "Не убивает сам; замедляет, чтобы другие угрозы догнали или удержали игрока в зоне."
+      ],
+      "good_synergies": [
+        "С Орком-бойцом: замедление + телесное давление.",
+        "С Огненным слаймом: вода удерживает в огне.",
+        "С Ядовитым слаймом: вода мешает выйти из облака."
+      ],
+      "faction_id": "FACTION_NATURE",
+      "faction_name": "Природа",
+      "creature_type_id": "CREATURE_PR_WATER_SLIME",
+      "scene_path": "res://scenes/enemies/water_slime.tscn",
+      "ai_type": "ranged",
+      "is_fully_playable_in_mvp": true,
+      "threat_weight": 1.0,
+      "implemented_in_patch_i": true,
+      "runtime_note": "Patch I: generic playable implementation for multi-floor progression."
+    },
+    {
+      "id": "ENEMY_PR_FIRE_SLIME",
+      "name": "Огненный слайм",
+      "faction": "Природа",
+      "creature_type": "Огненный слайм",
+      "type": "Агрессивный зональный враг",
+      "role": "Горение, взрывы, давление через опасные точки",
+      "danger": "Средняя",
+      "base_stats": {
+        "hp": 30.0,
+        "movement_speed_m_per_sec": 3.4,
+        "armor": 0,
+        "damage_profile": "средний магический",
+        "attack_range_m": 3.2,
+        "attack_interval_seconds": 1.8,
+        "essence_reward": "1 эссенция Огненного слайма",
+        "essence_amount": 1
+      },
+      "behavior": {
+        "priority": "приблизиться на среднюю дистанцию → плюнуть огненной каплей → оставить огненную зону → отскочить, если игрок близко",
+        "design_note": "Самый агрессивный слайм; короткие вспышки опасности, не ковры огня."
+      },
+      "attacks": [
+        {
+          "name": "Огненная капля",
+          "telegraph_seconds": 0.4,
+          "projectile": "капля по дуге в сторону игрока",
+          "range_m": 3.2,
+          "damage": "низкий-средний магический",
+          "after_effect": "огненное пятно"
+        },
+        {
+          "name": "Пылающий отскок",
+          "condition": "игрок ближе 1.2 м",
+          "cooldown_seconds": 5,
+          "effect": "отскок на 2 м; на стартовой позиции малое огненное пятно на 1.5 сек."
+        }
+      ],
+      "zones": [
+        {
+          "name": "Огненное пятно",
+          "radius_m": 1.2,
+          "duration_seconds": 2.5,
+          "damage": "5% базового урона слайма в секунду",
+          "extra": "Если игрок стоит >1 сек., получает Горение на 3 сек.",
+          "limits": [
+            "Не больше 6 огненных пятен от обычных Огненных слаймов на экране.",
+            "Горение не убивает без дополнительных ошибок."
+          ]
+        }
+      ],
+      "statuses": [
+        {
+          "name": "Горение игрока",
+          "duration_seconds": 3,
+          "effect": "слабый DoT",
+          "limits": [
+            "Не стакается бесконечно, только обновляет длительность."
+          ]
+        }
+      ],
+      "wave_role": [
+        "Заставляет двигаться; наказывает стояние и плохой маршрут."
+      ],
+      "good_synergies": [
+        "С Водным слаймом: вода замедляет, огонь наказывает.",
+        "С Орком-воином: уход от молота может привести в огонь.",
+        "С Духом молний: огонь гонит игрока в зоны проводников."
+      ],
+      "faction_id": "FACTION_NATURE",
+      "faction_name": "Природа",
+      "creature_type_id": "CREATURE_PR_FIRE_SLIME",
+      "scene_path": "res://scenes/enemies/enemy_base.tscn",
+      "ai_type": "ranged",
+      "is_fully_playable_in_mvp": true,
+      "threat_weight": 1.25,
+      "implemented_in_patch_i": true,
+      "runtime_note": "Patch I: generic playable implementation for multi-floor progression."
+    },
+    {
+      "id": "ENEMY_PR_POISON_SLIME",
+      "name": "Ядовитый слайм",
+      "faction": "Природа",
+      "creature_type": "Ядовитый слайм",
+      "type": "Дебаффер / DoT-враг",
+      "role": "Яд, ослабление, заражение, давление в долгом бою",
+      "danger": "Средняя-высокая",
+      "base_stats": {
+        "hp": 40.0,
+        "movement_speed_m_per_sec": 2.9,
+        "armor": 0,
+        "damage_profile": "низкий магический + яд",
+        "attack_range_m": 3.8,
+        "attack_interval_seconds": 2.2,
+        "essence_reward": "2 эссенции Ядовитого слайма",
+        "essence_amount": 2
+      },
+      "behavior": {
+        "priority": "держать дистанцию → плевать ядом → оставлять токсичные облака → поддерживать давление",
+        "design_note": "Не burst-враг; наказывает затянутую ошибку."
+      },
+      "attacks": [
+        {
+          "name": "Токсичный плевок",
+          "telegraph_seconds": 0.55,
+          "projectile": "снаряд в сторону игрока",
+          "range_m": 3.8,
+          "damage": "низкий магический",
+          "status": "1 стак Яда",
+          "after_effect": "малое токсичное облако"
+        }
+      ],
+      "statuses": [
+        {
+          "name": "Яд игрока",
+          "duration_seconds": 5,
+          "max_stacks": 3,
+          "effect": "слабый DoT за стак",
+          "threshold": "при 3 стаках — Отравление, стаки сбрасываются"
+        },
+        {
+          "name": "Отравление",
+          "duration_seconds": 4,
+          "effect": "средний DoT",
+          "extra": "-25% входящего лечения/восстановления, если система активна",
+          "limit": "не чаще 1 раза в 8 сек. от обычных Ядовитых слаймов"
+        }
+      ],
+      "zones": [
+        {
+          "name": "Токсичное облако",
+          "radius_m": 1.5,
+          "duration_seconds": 3.5,
+          "tick_rule": "каждые 1.2 сек. внутри облака игрок получает 1 стак Яда",
+          "limits": [
+            "Облака не перекрывают больше 50% арены в обычных комнатах.",
+            "Яд не ваншотит."
+          ]
+        }
+      ],
+      "wave_role": [
+        "Заставляет выбирать: убить сейчас или рискнуть накоплением яда."
+      ],
+      "good_synergies": [
+        "С Водным слаймом: замедление мешает выйти из облака.",
+        "С Орком-командиром: толпа давит, яд заставляет двигаться.",
+        "С Духом пустоты: разломы и облака режут маршруты."
+      ],
+      "faction_id": "FACTION_NATURE",
+      "faction_name": "Природа",
+      "creature_type_id": "CREATURE_PR_POISON_SLIME",
+      "scene_path": "res://scenes/enemies/enemy_base.tscn",
+      "ai_type": "ranged",
+      "is_fully_playable_in_mvp": true,
+      "threat_weight": 1.55,
+      "implemented_in_patch_i": true,
+      "runtime_note": "Patch I: generic playable implementation for multi-floor progression."
+    },
+    {
+      "id": "ENEMY_EF_AIR_SPIRIT",
+      "name": "Дух воздуха",
+      "faction": "Эфиры",
+      "creature_type": "Дух воздуха",
+      "type": "Быстрый мобильный враг",
+      "role": "Давление на реакцию, воздушные линии, смещение позиции игрока",
+      "danger": "Низкая-средняя",
+      "base_stats": {
+        "hp": 32.0,
+        "movement_speed_m_per_sec": 4.2,
+        "armor": 0,
+        "damage_profile": "низкий-средний магический",
+        "attack_range_m": 4.0,
+        "attack_interval_seconds": 1.7,
+        "essence_reward": "1 эссенция Духа воздуха",
+        "essence_amount": 1
+      },
+      "behavior": {
+        "priority": "держать среднюю дистанцию → смещаться вокруг игрока → атаковать воздушной линией → менять позицию",
+        "limits": [
+          "Не постоянно убегает.",
+          "Если игрок сблизился и прожал способность, дух должен быстро умереть."
+        ]
+      },
+      "attacks": [
+        {
+          "name": "Воздушный порез",
+          "telegraph_seconds": 0.45,
+          "shape": "воздушная линия",
+          "length_m": 4,
+          "width_m": 0.6,
+          "damage": "низкий-средний магический",
+          "after_effect": "слабый воздушный поток на 1.5 сек."
+        }
+      ],
+      "terrain_effects": [
+        {
+          "name": "Слабый воздушный поток",
+          "duration_seconds": 1.5,
+          "with_direction": "+10% скорости на 1 сек.",
+          "against_direction": "-10% скорости на 1 сек.",
+          "design_note": "Хороший игрок может использовать поток себе на пользу."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Скользящее смещение",
+          "cooldown_seconds": 5,
+          "condition": "игрок ближе 1.8 м",
+          "effect": "боковое смещение на 2.5 м",
+          "post_shift_lockout_seconds": 0.4,
+          "limits": [
+            "Не даёт неуязвимость.",
+            "Не проходит сквозь стены/объекты.",
+            "Не смещается прямо за спину вплотную."
+          ]
+        }
+      ],
+      "wave_role": [
+        "Мешает двигаться по прямой; заставляет учитывать линии и направления потоков."
+      ],
+      "good_synergies": [
+        "С Орком-бойцом: тела + линии маршрута.",
+        "С Водным слаймом: лужи + линии.",
+        "С Духом молний: уклонение от линий ведёт к молниям."
+      ],
+      "faction_id": "FACTION_ETHERS",
+      "faction_name": "Эфиры",
+      "creature_type_id": "CREATURE_EF_AIR_SPIRIT",
+      "scene_path": "res://scenes/enemies/air_spirit.tscn",
+      "ai_type": "skirmisher",
+      "is_fully_playable_in_mvp": true,
+      "threat_weight": 1.0,
+      "implemented_in_patch_i": true,
+      "runtime_note": "Patch I: generic playable implementation for multi-floor progression."
+    },
+    {
+      "id": "ENEMY_EF_LIGHTNING_SPIRIT",
+      "name": "Дух молний",
+      "faction": "Эфиры",
+      "creature_type": "Дух молний",
+      "type": "Дальний прок-враг",
+      "role": "Заряды, цепная угроза, наказание за скученность и плохую позицию",
+      "danger": "Средняя",
+      "base_stats": {
+        "hp": 38.0,
+        "movement_speed_m_per_sec": 3.5,
+        "armor": 0,
+        "damage_profile": "средний магический",
+        "attack_range_m": 4.5,
+        "attack_interval_seconds": 2.1,
+        "essence_reward": "2 эссенции Духа молний",
+        "essence_amount": 2
+      },
+      "behavior": {
+        "priority": "держать дистанцию → стрелять болтом → создавать проводник → отступать при сближении",
+        "design_note": "Не слишком частый в спавне; атаки требуют читаемости."
+      },
+      "attacks": [
+        {
+          "name": "Искровой болт",
+          "telegraph_seconds": 0.5,
+          "projectile": "быстрый молниевый снаряд",
+          "range_m": 4.5,
+          "damage": "средний магический",
+          "status": "1 стак Заряда на 5 сек."
+        }
+      ],
+      "statuses": [
+        {
+          "name": "Заряд игрока",
+          "max_stacks": 3,
+          "duration_seconds": 5,
+          "threshold": "при 3 стаках — электрический всплеск",
+          "burst": "средний магический урон и снятие стаков",
+          "limit": "не чаще 1 раза в 6 сек.; не ваншотит"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Малый проводник",
+          "cooldown_seconds": 8,
+          "duration_seconds": 6,
+          "effect": "статичный проводник молнии",
+          "chain_rule": "если Искровой болт проходит рядом, молния может перескочить в радиусе 2 м",
+          "chain_damage": "50% от урона болта",
+          "limits": [
+            "Не появляется под игроком.",
+            "Минимум 2 м от игрока.",
+            "Максимум 3 малых проводника от обычных духов.",
+            "Цепная молния не запускает новую цепную молнию."
+          ]
+        }
+      ],
+      "wave_role": [
+        "Наказывает позиционирование рядом с проводниками и повторные ошибки."
+      ],
+      "good_synergies": [
+        "С Огненным слаймом: огонь двигает игрока, молнии наказывают маршрут.",
+        "С Духом воздуха: реактивная комната.",
+        "С Орком-воином: уход от удара может привести к проводнику."
+      ],
+      "faction_id": "FACTION_ETHERS",
+      "faction_name": "Эфиры",
+      "creature_type_id": "CREATURE_EF_LIGHTNING_SPIRIT",
+      "scene_path": "res://scenes/enemies/enemy_base.tscn",
+      "ai_type": "ranged",
+      "is_fully_playable_in_mvp": true,
+      "threat_weight": 1.4,
+      "implemented_in_patch_i": true,
+      "runtime_note": "Patch I: generic playable implementation for multi-floor progression."
+    },
+    {
+      "id": "ENEMY_EF_VOID_SPIRIT",
+      "name": "Дух пустоты",
+      "faction": "Эфиры",
+      "creature_type": "Дух пустоты",
+      "type": "Тактический враг / нарушитель ритма",
+      "role": "Фантомы, разломы, ложные угрозы, контроль безопасных зон",
+      "danger": "Средняя-высокая",
+      "base_stats": {
+        "hp": 42.0,
+        "movement_speed_m_per_sec": 3.2,
+        "armor": 0,
+        "damage_profile": "средний магический",
+        "attack_range_m": 4.0,
+        "attack_interval_seconds": 2.3,
+        "essence_reward": "2 эссенции Духа пустоты",
+        "essence_amount": 2
+      },
+      "behavior": {
+        "priority": "держать дистанцию → создавать пятна/разломы → иногда фантомную угрозу → отступать",
+        "design_note": "Самый умный обычный враг Эфиров; нельзя спамить пачками."
+      },
+      "attacks": [
+        {
+          "name": "Пустотный сгусток",
+          "telegraph_seconds": 0.6,
+          "projectile": "медленный сгусток пустоты",
+          "range_m": 4,
+          "damage": "средний магический",
+          "after_effect": "пустотное пятно"
+        }
+      ],
+      "zones": [
+        {
+          "name": "Пустотное пятно",
+          "radius_m": 1.5,
+          "duration_seconds": 3,
+          "effect": "слабый периодический магический урон + замедление на 12%",
+          "limits": [
+            "Пятна не стакают замедление.",
+            "Максимум 4 пустотных пятна от обычных духов на экране."
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Ложный отклик",
+          "cooldown_seconds": 9,
+          "effect": "фантомная копия на 4 сек.; исчезает после одной атаки; повторяет Пустотный сгусток с 40% урона",
+          "visual_readability": [
+            "тусклее настоящего врага",
+            "другой контур/прозрачность",
+            "не полностью неотличим"
+          ],
+          "limits": [
+            "Фантомы не создают фантомов.",
+            "Не дают эссенцию/мета-прогресс.",
+            "Фантомный сгусток создаёт только малый след на 1.5 сек."
+          ]
+        },
+        {
+          "name": "Малый разлом",
+          "cooldown_seconds": 11,
+          "telegraph_seconds": 0.9,
+          "shape": "тёмный круг под игроком",
+          "radius_m": 1.7,
+          "damage": "средний магический",
+          "limits": [
+            "Не оставляет долгую зону.",
+            "Не вызывает другие разломы."
+          ]
+        }
+      ],
+      "wave_role": [
+        "Заставляет отличать настоящую угрозу от ложной; ломает ритм движения."
+      ],
+      "good_synergies": [
+        "С Ядовитым слаймом: пятна и облака режут маршруты.",
+        "С Орком-командиром: дилемма приоритетов.",
+        "С Духом молний: разломы двигают, проводники наказывают."
+      ],
+      "faction_id": "FACTION_ETHERS",
+      "faction_name": "Эфиры",
+      "creature_type_id": "CREATURE_EF_VOID_SPIRIT",
+      "scene_path": "res://scenes/enemies/enemy_base.tscn",
+      "ai_type": "skirmisher",
+      "is_fully_playable_in_mvp": true,
+      "threat_weight": 1.65,
+      "implemented_in_patch_i": true,
+      "runtime_note": "Patch I: generic playable implementation for multi-floor progression."
+    }
+  ]
+}

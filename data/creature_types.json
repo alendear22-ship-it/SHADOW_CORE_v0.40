@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "id": "CREATURE_KR_ORC_FIGHTER",
+      "name": "Орк-боец",
+      "faction_id": "FACTION_KRUSHERS",
+      "faction_name": "Крушители"
+    },
+    {
+      "id": "CREATURE_KR_ORC_WARRIOR",
+      "name": "Орк-воин",
+      "faction_id": "FACTION_KRUSHERS",
+      "faction_name": "Крушители"
+    },
+    {
+      "id": "CREATURE_KR_ORC_COMMANDER",
+      "name": "Орк-командир",
+      "faction_id": "FACTION_KRUSHERS",
+      "faction_name": "Крушители"
+    },
+    {
+      "id": "CREATURE_PR_WATER_SLIME",
+      "name": "Водный слайм",
+      "faction_id": "FACTION_NATURE",
+      "faction_name": "Природа"
+    },
+    {
+      "id": "CREATURE_PR_FIRE_SLIME",
+      "name": "Огненный слайм",
+      "faction_id": "FACTION_NATURE",
+      "faction_name": "Природа"
+    },
+    {
+      "id": "CREATURE_PR_POISON_SLIME",
+      "name": "Ядовитый слайм",
+      "faction_id": "FACTION_NATURE",
+      "faction_name": "Природа"
+    },
+    {
+      "id": "CREATURE_EF_AIR_SPIRIT",
+      "name": "Дух воздуха",
+      "faction_id": "FACTION_ETHERS",
+      "faction_name": "Эфиры"
+    },
+    {
+      "id": "CREATURE_EF_LIGHTNING_SPIRIT",
+      "name": "Дух молний",
+      "faction_id": "FACTION_ETHERS",
+      "faction_name": "Эфиры"
+    },
+    {
+      "id": "CREATURE_EF_VOID_SPIRIT",
+      "name": "Дух пустоты",
+      "faction_id": "FACTION_ETHERS",
+      "faction_name": "Эфиры"
+    }
+  ]
+}

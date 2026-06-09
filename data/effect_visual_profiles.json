@@ -1,0 +1,5643 @@
+{
+  "schema_version": "effect_visual_profiles_v2_player_boss_vfx",
+  "source_of_truth": "visual_foundation_v0_37",
+  "items": [
+    {
+      "id": "VISUAL_GENERIC_HIT",
+      "name_ru": "Удар",
+      "visual_type": "impact",
+      "color": "#FFFFFF",
+      "secondary_color": "#B88CFF",
+      "shape": "burst",
+      "duration": 0.18,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 22,
+          "alpha": 0.45,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 6,
+          "length_px": 18,
+          "alpha": 0.8
+        }
+      ],
+      "juice": {
+        "screen_shake": 0.0,
+        "hit_pause": 0.0,
+        "flash": true
+      }
+    },
+    {
+      "id": "VISUAL_GENERIC_CAST",
+      "name_ru": "Применение",
+      "visual_type": "cast",
+      "color": "#D8D8FF",
+      "secondary_color": "#8B7CFF",
+      "shape": "pulse",
+      "duration": 0.28,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 18,
+          "alpha": 0.35,
+          "expand": true
+        },
+        {
+          "type": "ring",
+          "radius_px": 28,
+          "alpha": 0.55
+        }
+      ],
+      "juice": {
+        "flash": true
+      }
+    },
+    {
+      "id": "VISUAL_GENERIC_TELEGRAPH_CIRCLE",
+      "name_ru": "Телеграф круг",
+      "visual_type": "telegraph",
+      "color": "#FFFFFF",
+      "secondary_color": "#B88CFF",
+      "shape": "circle",
+      "duration": 0.45,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 48,
+          "alpha": 0.38
+        },
+        {
+          "type": "circle",
+          "radius_px": 42,
+          "alpha": 0.13
+        }
+      ],
+      "juice": {
+        "flash": false
+      }
+    },
+    {
+      "id": "VISUAL_GENERIC_TELEGRAPH_CONE",
+      "name_ru": "Телеграф сектор",
+      "visual_type": "telegraph",
+      "color": "#FFFFFF",
+      "secondary_color": "#B88CFF",
+      "shape": "cone",
+      "duration": 0.42,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "cone",
+          "radius_px": 92,
+          "angle_deg": 70,
+          "alpha": 0.22
+        },
+        {
+          "type": "spark",
+          "count": 4,
+          "length_px": 22,
+          "alpha": 0.35
+        }
+      ],
+      "juice": {
+        "flash": false
+      }
+    },
+    {
+      "id": "VISUAL_GENERIC_TELEGRAPH_LINE",
+      "name_ru": "Телеграф линия",
+      "visual_type": "telegraph",
+      "color": "#FFFFFF",
+      "secondary_color": "#B88CFF",
+      "shape": "line",
+      "duration": 0.35,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "line",
+          "length_px": 160,
+          "width_px": 12,
+          "alpha": 0.28
+        },
+        {
+          "type": "spark",
+          "count": 3,
+          "length_px": 20,
+          "alpha": 0.35
+        }
+      ],
+      "juice": {
+        "flash": false
+      }
+    },
+    {
+      "id": "VISUAL_GENERIC_ZONE",
+      "name_ru": "Зона",
+      "visual_type": "zone",
+      "color": "#91D8FF",
+      "secondary_color": "#FFFFFF",
+      "shape": "circle",
+      "duration": 0.65,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.2
+        },
+        {
+          "type": "ring",
+          "radius_px": 62,
+          "alpha": 0.45
+        }
+      ],
+      "juice": {
+        "flash": false
+      }
+    },
+    {
+      "id": "VISUAL_GENERIC_PROJECTILE",
+      "name_ru": "Снаряд",
+      "visual_type": "projectile",
+      "color": "#FFFFFF",
+      "secondary_color": "#B88CFF",
+      "shape": "line",
+      "duration": 0.25,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "line",
+          "length_px": 72,
+          "width_px": 5,
+          "alpha": 0.75
+        },
+        {
+          "type": "spark",
+          "count": 3,
+          "length_px": 10,
+          "alpha": 0.55
+        }
+      ],
+      "juice": {
+        "flash": true
+      }
+    },
+    {
+      "id": "VISUAL_GENERIC_STATUS_AURA",
+      "name_ru": "Аура статуса",
+      "visual_type": "status_aura",
+      "color": "#B88CFF",
+      "secondary_color": "#FFFFFF",
+      "shape": "aura",
+      "duration": 0.7,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 34,
+          "alpha": 0.38
+        },
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.12
+        }
+      ],
+      "juice": {
+        "flash": false
+      }
+    },
+    {
+      "id": "VISUAL_GENERIC_REACTION_BURST",
+      "name_ru": "Реакция",
+      "visual_type": "reaction",
+      "color": "#F8F0FF",
+      "secondary_color": "#B88CFF",
+      "shape": "burst",
+      "duration": 0.24,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 24,
+          "alpha": 0.35,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 9,
+          "length_px": 24,
+          "alpha": 0.85
+        }
+      ],
+      "juice": {
+        "flash": true
+      }
+    },
+    {
+      "id": "VISUAL_KR_SLASH",
+      "name_ru": "Крушащий разрез",
+      "visual_type": "impact",
+      "color": "#FF6E6E",
+      "secondary_color": "#FFD1A3",
+      "shape": "slash",
+      "duration": 0.22,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "arc",
+          "radius_px": 42,
+          "alpha": 0.7
+        },
+        {
+          "type": "spark",
+          "count": 7,
+          "length_px": 20,
+          "alpha": 0.7
+        }
+      ],
+      "juice": {
+        "flash": true
+      }
+    },
+    {
+      "id": "VISUAL_KR_IMPACT",
+      "name_ru": "Крушащий удар",
+      "visual_type": "impact",
+      "color": "#FF8A54",
+      "secondary_color": "#FFF0CC",
+      "shape": "burst",
+      "duration": 0.2,
+      "scale": 1.1,
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 26,
+          "alpha": 0.42,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 8,
+          "length_px": 22,
+          "alpha": 0.85
+        }
+      ],
+      "juice": {
+        "flash": true
+      }
+    },
+    {
+      "id": "VISUAL_KR_WOUND_AURA",
+      "name_ru": "Кровоточащая рана",
+      "visual_type": "status_aura",
+      "color": "#C5333F",
+      "secondary_color": "#FF9AA5",
+      "shape": "aura",
+      "duration": 0.65,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 30,
+          "alpha": 0.36
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 10,
+          "alpha": 0.55
+        }
+      ],
+      "juice": {
+        "flash": false
+      }
+    },
+    {
+      "id": "VISUAL_PR_WATER_ZONE",
+      "name_ru": "Водная зона",
+      "visual_type": "zone",
+      "color": "#57BFFF",
+      "secondary_color": "#CAF2FF",
+      "shape": "circle",
+      "duration": 0.7,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 62,
+          "alpha": 0.22
+        },
+        {
+          "type": "ring",
+          "radius_px": 66,
+          "alpha": 0.48
+        }
+      ],
+      "juice": {
+        "flash": false
+      }
+    },
+    {
+      "id": "VISUAL_PR_FIRE_ZONE",
+      "name_ru": "Огненная зона",
+      "visual_type": "zone",
+      "color": "#FF7A2F",
+      "secondary_color": "#FFD15E",
+      "shape": "circle",
+      "duration": 0.62,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.24
+        },
+        {
+          "type": "spark",
+          "count": 10,
+          "length_px": 16,
+          "alpha": 0.65
+        }
+      ],
+      "juice": {
+        "flash": true
+      }
+    },
+    {
+      "id": "VISUAL_PR_POISON_CLOUD",
+      "name_ru": "Ядовитое облако",
+      "visual_type": "zone",
+      "color": "#78D55C",
+      "secondary_color": "#D5FF9B",
+      "shape": "cloud",
+      "duration": 0.8,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 60,
+          "alpha": 0.2
+        },
+        {
+          "type": "spark",
+          "count": 8,
+          "length_px": 12,
+          "alpha": 0.42
+        }
+      ],
+      "juice": {
+        "flash": false
+      }
+    },
+    {
+      "id": "VISUAL_EF_WIND_SLASH",
+      "name_ru": "Воздушный разрез",
+      "visual_type": "impact",
+      "color": "#BFEAFF",
+      "secondary_color": "#FFFFFF",
+      "shape": "slash",
+      "duration": 0.2,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "arc",
+          "radius_px": 46,
+          "alpha": 0.62
+        },
+        {
+          "type": "line",
+          "length_px": 90,
+          "width_px": 4,
+          "alpha": 0.35
+        }
+      ],
+      "juice": {
+        "flash": true
+      }
+    },
+    {
+      "id": "VISUAL_EF_LIGHTNING_CHAIN",
+      "name_ru": "Цепь молний",
+      "visual_type": "impact",
+      "color": "#FFF16B",
+      "secondary_color": "#82D8FF",
+      "shape": "lightning",
+      "duration": 0.18,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "line",
+          "length_px": 96,
+          "width_px": 5,
+          "alpha": 0.78
+        },
+        {
+          "type": "spark",
+          "count": 8,
+          "length_px": 18,
+          "alpha": 0.85
+        }
+      ],
+      "juice": {
+        "flash": true
+      }
+    },
+    {
+      "id": "VISUAL_EF_VOID_RIFT",
+      "name_ru": "Разлом пустоты",
+      "visual_type": "zone",
+      "color": "#9A66FF",
+      "secondary_color": "#1E0D3D",
+      "shape": "rift",
+      "duration": 0.55,
+      "scale": 1.0,
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 44,
+          "alpha": 0.28
+        },
+        {
+          "type": "line",
+          "length_px": 92,
+          "width_px": 8,
+          "alpha": 0.58
+        },
+        {
+          "type": "spark",
+          "count": 6,
+          "length_px": 22,
+          "alpha": 0.55
+        }
+      ],
+      "juice": {
+        "flash": true
+      }
+    },
+    {
+      "id": "VFX_PLAYER_AIR_SPIRIT_AIR_SLASH_CAST",
+      "name_ru": "Воздушный Разрез — применение",
+      "visual_type": "cast_wind_slash",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "air",
+        "slash",
+        "wind",
+        "cast",
+        "player_version"
+      ],
+      "color": "#7CD7FF",
+      "secondary_color": "#E8FBFF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_AIR_SPIRIT_AIR_SLASH_IMPACT",
+      "name_ru": "Воздушный Разрез — попадание",
+      "visual_type": "wind_slash",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "air",
+        "slash",
+        "wind",
+        "impact",
+        "player_version"
+      ],
+      "color": "#7CD7FF",
+      "secondary_color": "#E8FBFF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "arc",
+          "radius_px": 54,
+          "alpha": 0.74,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 20,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_AIR_SPIRIT_AIR_SLASH_TRAVEL",
+      "name_ru": "Воздушный Разрез — след",
+      "visual_type": "wind_slash",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "air",
+        "slash",
+        "wind",
+        "travel",
+        "player_version"
+      ],
+      "color": "#7CD7FF",
+      "secondary_color": "#E8FBFF",
+      "duration": 0.32,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "arc",
+          "radius_px": 54,
+          "alpha": 0.74,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 20,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_AIR_SPIRIT_STORM_POCKET_CAST",
+      "name_ru": "Штормовой Карман — применение",
+      "visual_type": "cast_storm_orb",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "air",
+        "storm",
+        "lightning",
+        "cast",
+        "player_version"
+      ],
+      "color": "#50BEEF",
+      "secondary_color": "#FFF16B",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_AIR_SPIRIT_STORM_POCKET_IMPACT",
+      "name_ru": "Штормовой Карман — попадание",
+      "visual_type": "storm_orb",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "air",
+        "storm",
+        "lightning",
+        "impact",
+        "player_version"
+      ],
+      "color": "#50BEEF",
+      "secondary_color": "#FFF16B",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "orb",
+          "radius_px": 24,
+          "alpha": 0.72
+        },
+        {
+          "type": "spark",
+          "count": 9,
+          "length_px": 18,
+          "alpha": 0.58
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_AIR_SPIRIT_STORM_POCKET_TRAVEL",
+      "name_ru": "Штормовой Карман — след",
+      "visual_type": "storm_orb",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "air",
+        "storm",
+        "lightning",
+        "travel",
+        "player_version"
+      ],
+      "color": "#50BEEF",
+      "secondary_color": "#FFF16B",
+      "duration": 0.32,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "orb",
+          "radius_px": 24,
+          "alpha": 0.72
+        },
+        {
+          "type": "spark",
+          "count": 9,
+          "length_px": 18,
+          "alpha": 0.58
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_AIR_SPIRIT_VORTEX_SHIFT_CAST",
+      "name_ru": "Вихревой Сдвиг — применение",
+      "visual_type": "cast_vortex_zone",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "air",
+        "vortex",
+        "pull",
+        "cast",
+        "player_version"
+      ],
+      "color": "#45C7F0",
+      "secondary_color": "#C7F8FF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_AIR_SPIRIT_VORTEX_SHIFT_IMPACT",
+      "name_ru": "Вихревой Сдвиг — попадание",
+      "visual_type": "vortex_zone",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "air",
+        "vortex",
+        "pull",
+        "impact",
+        "player_version"
+      ],
+      "color": "#45C7F0",
+      "secondary_color": "#C7F8FF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_AIR_SPIRIT_VORTEX_SHIFT_ZONE",
+      "name_ru": "Вихревой Сдвиг — зона",
+      "visual_type": "vortex_zone",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "air",
+        "vortex",
+        "pull",
+        "zone",
+        "player_version"
+      ],
+      "color": "#45C7F0",
+      "secondary_color": "#C7F8FF",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_FIRE_SLIME_BURNING_PATCH_CAST",
+      "name_ru": "Горящее Пятно — применение",
+      "visual_type": "cast_fire_patch",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "fire",
+        "burn",
+        "zone",
+        "cast",
+        "player_version"
+      ],
+      "color": "#F05A24",
+      "secondary_color": "#FFD166",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_FIRE_SLIME_BURNING_PATCH_IMPACT",
+      "name_ru": "Горящее Пятно — попадание",
+      "visual_type": "fire_patch",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "fire",
+        "burn",
+        "zone",
+        "impact",
+        "player_version"
+      ],
+      "color": "#F05A24",
+      "secondary_color": "#FFD166",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_FIRE_SLIME_BURNING_PATCH_ZONE",
+      "name_ru": "Горящее Пятно — зона",
+      "visual_type": "fire_patch",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "fire",
+        "burn",
+        "zone",
+        "zone",
+        "player_version"
+      ],
+      "color": "#F05A24",
+      "secondary_color": "#FFD166",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_FIRE_SLIME_FIRE_ARC_CAST",
+      "name_ru": "Огненная Дуга — применение",
+      "visual_type": "cast_flame_arc",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "fire",
+        "arc",
+        "burn",
+        "cast",
+        "player_version"
+      ],
+      "color": "#FF6E1F",
+      "secondary_color": "#FFE168",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_FIRE_SLIME_FIRE_ARC_IMPACT",
+      "name_ru": "Огненная Дуга — попадание",
+      "visual_type": "flame_arc",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "fire",
+        "arc",
+        "burn",
+        "impact",
+        "player_version"
+      ],
+      "color": "#FF6E1F",
+      "secondary_color": "#FFE168",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "arc",
+          "radius_px": 54,
+          "alpha": 0.74,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 20,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_FIRE_SLIME_FIRE_ARC_TRAVEL",
+      "name_ru": "Огненная Дуга — след",
+      "visual_type": "flame_arc",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "fire",
+        "arc",
+        "burn",
+        "travel",
+        "player_version"
+      ],
+      "color": "#FF6E1F",
+      "secondary_color": "#FFE168",
+      "duration": 0.32,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "arc",
+          "radius_px": 54,
+          "alpha": 0.74,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 20,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_FIRE_SLIME_HEAT_ERUPTION_CAST",
+      "name_ru": "Извержение Жара — применение",
+      "visual_type": "cast_eruption",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "fire",
+        "eruption",
+        "delayed",
+        "cast",
+        "player_version"
+      ],
+      "color": "#DD341A",
+      "secondary_color": "#FFC04D",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_FIRE_SLIME_HEAT_ERUPTION_DELAYED",
+      "name_ru": "Извержение Жара — задержка",
+      "visual_type": "eruption",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "fire",
+        "eruption",
+        "delayed",
+        "delayed",
+        "player_version"
+      ],
+      "color": "#DD341A",
+      "secondary_color": "#FFC04D",
+      "duration": 0.52,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_FIRE_SLIME_HEAT_ERUPTION_IMPACT",
+      "name_ru": "Извержение Жара — попадание",
+      "visual_type": "eruption",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "fire",
+        "eruption",
+        "delayed",
+        "impact",
+        "player_version"
+      ],
+      "color": "#DD341A",
+      "secondary_color": "#FFC04D",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_LIGHTNING_SPIRIT_SMALL_CONDUIT_CAST",
+      "name_ru": "Малый Проводник — применение",
+      "visual_type": "cast_lightning_chain",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "lightning",
+        "conduit",
+        "link",
+        "cast",
+        "player_version"
+      ],
+      "color": "#FFE74D",
+      "secondary_color": "#69E6FF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_LIGHTNING_SPIRIT_SMALL_CONDUIT_IMPACT",
+      "name_ru": "Малый Проводник — попадание",
+      "visual_type": "lightning_chain",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "lightning",
+        "conduit",
+        "link",
+        "impact",
+        "player_version"
+      ],
+      "color": "#FFE74D",
+      "secondary_color": "#69E6FF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "lightning",
+          "length_px": 96,
+          "alpha": 0.92
+        },
+        {
+          "type": "spark",
+          "count": 8,
+          "length_px": 24,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_LIGHTNING_SPIRIT_SMALL_CONDUIT_TRAVEL",
+      "name_ru": "Малый Проводник — след",
+      "visual_type": "lightning_chain",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "lightning",
+        "conduit",
+        "link",
+        "travel",
+        "player_version"
+      ],
+      "color": "#FFE74D",
+      "secondary_color": "#69E6FF",
+      "duration": 0.32,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "lightning",
+          "length_px": 96,
+          "alpha": 0.92
+        },
+        {
+          "type": "spark",
+          "count": 8,
+          "length_px": 24,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_LIGHTNING_SPIRIT_SPARK_DISCHARGE_CAST",
+      "name_ru": "Искровой Разряд — применение",
+      "visual_type": "cast_lightning_chain",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "lightning",
+        "shock",
+        "chain",
+        "cast",
+        "player_version"
+      ],
+      "color": "#FFF16B",
+      "secondary_color": "#66D9FF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_LIGHTNING_SPIRIT_SPARK_DISCHARGE_IMPACT",
+      "name_ru": "Искровой Разряд — попадание",
+      "visual_type": "lightning_chain",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "lightning",
+        "shock",
+        "chain",
+        "impact",
+        "player_version"
+      ],
+      "color": "#FFF16B",
+      "secondary_color": "#66D9FF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "lightning",
+          "length_px": 96,
+          "alpha": 0.92
+        },
+        {
+          "type": "spark",
+          "count": 8,
+          "length_px": 24,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_LIGHTNING_SPIRIT_THUNDER_BREAK_CAST",
+      "name_ru": "Грозовой Перелом — применение",
+      "visual_type": "cast_lightning_strike",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "lightning",
+        "strike",
+        "delayed",
+        "cast",
+        "player_version"
+      ],
+      "color": "#FFF78A",
+      "secondary_color": "#6AD7FF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_LIGHTNING_SPIRIT_THUNDER_BREAK_DELAYED",
+      "name_ru": "Грозовой Перелом — задержка",
+      "visual_type": "lightning_strike",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "lightning",
+        "strike",
+        "delayed",
+        "delayed",
+        "player_version"
+      ],
+      "color": "#FFF78A",
+      "secondary_color": "#6AD7FF",
+      "duration": 0.52,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "lightning",
+          "length_px": 96,
+          "alpha": 0.92
+        },
+        {
+          "type": "spark",
+          "count": 8,
+          "length_px": 24,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_LIGHTNING_SPIRIT_THUNDER_BREAK_IMPACT",
+      "name_ru": "Грозовой Перелом — попадание",
+      "visual_type": "lightning_strike",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "lightning",
+        "strike",
+        "delayed",
+        "impact",
+        "player_version"
+      ],
+      "color": "#FFF78A",
+      "secondary_color": "#6AD7FF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "lightning",
+          "length_px": 96,
+          "alpha": 0.92
+        },
+        {
+          "type": "spark",
+          "count": 8,
+          "length_px": 24,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_COMMANDER_ASSAULT_BANNER_CAST",
+      "name_ru": "Знамя Натиска — применение",
+      "visual_type": "cast_summoned_banner",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "banner",
+        "aura",
+        "assault",
+        "cast",
+        "player_version"
+      ],
+      "color": "#6A1624",
+      "secondary_color": "#FFD36A",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_COMMANDER_ASSAULT_BANNER_IMPACT",
+      "name_ru": "Знамя Натиска — попадание",
+      "visual_type": "summoned_banner",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "banner",
+        "aura",
+        "assault",
+        "impact",
+        "player_version"
+      ],
+      "color": "#6A1624",
+      "secondary_color": "#FFD36A",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "banner",
+          "radius_px": 48,
+          "alpha": 0.78
+        },
+        {
+          "type": "ring",
+          "radius_px": 64,
+          "alpha": 0.32
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_COMMANDER_ASSAULT_BANNER_ZONE",
+      "name_ru": "Знамя Натиска — зона",
+      "visual_type": "puddle_zone",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "banner",
+        "aura",
+        "assault",
+        "zone",
+        "player_version"
+      ],
+      "color": "#6A1624",
+      "secondary_color": "#FFD36A",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_COMMANDER_EXECUTION_ORDER_CAST",
+      "name_ru": "Приказ Казни — применение",
+      "visual_type": "cast_execution_mark",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "execution",
+        "mark",
+        "vulnerable",
+        "cast",
+        "player_version"
+      ],
+      "color": "#5B1019",
+      "secondary_color": "#FF334E",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_COMMANDER_EXECUTION_ORDER_IMPACT",
+      "name_ru": "Приказ Казни — попадание",
+      "visual_type": "execution_mark",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "execution",
+        "mark",
+        "vulnerable",
+        "impact",
+        "player_version"
+      ],
+      "color": "#5B1019",
+      "secondary_color": "#FF334E",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "rune",
+          "radius_px": 38,
+          "alpha": 0.78
+        },
+        {
+          "type": "ring",
+          "radius_px": 44,
+          "alpha": 0.48
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_COMMANDER_WAR_CRY_CAST",
+      "name_ru": "Боевой Клич — применение",
+      "visual_type": "cast_sound_wave",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "warcry",
+        "mark",
+        "cast",
+        "player_version"
+      ],
+      "color": "#7C1820",
+      "secondary_color": "#FF8A6C",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_COMMANDER_WAR_CRY_IMPACT",
+      "name_ru": "Боевой Клич — попадание",
+      "visual_type": "sound_wave",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "warcry",
+        "mark",
+        "impact",
+        "player_version"
+      ],
+      "color": "#7C1820",
+      "secondary_color": "#FF8A6C",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "wave_arc",
+          "radius_px": 38,
+          "alpha": 0.52
+        },
+        {
+          "type": "wave_arc",
+          "radius_px": 62,
+          "alpha": 0.35
+        },
+        {
+          "type": "wave_arc",
+          "radius_px": 86,
+          "alpha": 0.22
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_FIGHTER_BERSERK_RIFT_CAST",
+      "name_ru": "Берсеркский Разлом — применение",
+      "visual_type": "cast_ground_crack",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "rage",
+        "rift",
+        "cast",
+        "player_version"
+      ],
+      "color": "#7A1515",
+      "secondary_color": "#FF4E3A",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_FIGHTER_BERSERK_RIFT_DELAYED",
+      "name_ru": "Берсеркский Разлом — задержка",
+      "visual_type": "ground_crack",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "rage",
+        "rift",
+        "delayed",
+        "player_version"
+      ],
+      "color": "#7A1515",
+      "secondary_color": "#FF4E3A",
+      "duration": 0.52,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "crack",
+          "radius_px": 58,
+          "alpha": 0.82
+        },
+        {
+          "type": "inward",
+          "radius_px": 48,
+          "alpha": 0.54
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_FIGHTER_BERSERK_RIFT_IMPACT",
+      "name_ru": "Берсеркский Разлом — попадание",
+      "visual_type": "ground_crack",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "rage",
+        "rift",
+        "impact",
+        "player_version"
+      ],
+      "color": "#7A1515",
+      "secondary_color": "#FF4E3A",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "crack",
+          "radius_px": 58,
+          "alpha": 0.82
+        },
+        {
+          "type": "inward",
+          "radius_px": 48,
+          "alpha": 0.54
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_FIGHTER_BERSERK_RIFT_ZONE",
+      "name_ru": "Берсеркский Разлом — зона",
+      "visual_type": "puddle_zone",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "rage",
+        "rift",
+        "zone",
+        "player_version"
+      ],
+      "color": "#7A1515",
+      "secondary_color": "#FF4E3A",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_FIGHTER_BLOOD_DASH_CAST",
+      "name_ru": "Кровавый Рывок — применение",
+      "visual_type": "cast_dash_trail",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "bleed",
+        "dash",
+        "cast",
+        "player_version"
+      ],
+      "color": "#8E1018",
+      "secondary_color": "#FF7355",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_FIGHTER_BLOOD_DASH_IMPACT",
+      "name_ru": "Кровавый Рывок — попадание",
+      "visual_type": "dash_trail",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "bleed",
+        "dash",
+        "impact",
+        "player_version"
+      ],
+      "color": "#8E1018",
+      "secondary_color": "#FF7355",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "line",
+          "length_px": 104,
+          "width_px": 8,
+          "alpha": 0.55
+        },
+        {
+          "type": "spark",
+          "count": 7,
+          "length_px": 24,
+          "alpha": 0.52
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_FIGHTER_BLOOD_DASH_TRAVEL",
+      "name_ru": "Кровавый Рывок — след",
+      "visual_type": "dash_trail",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "bleed",
+        "dash",
+        "travel",
+        "player_version"
+      ],
+      "color": "#8E1018",
+      "secondary_color": "#FF7355",
+      "duration": 0.32,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "line",
+          "length_px": 104,
+          "width_px": 8,
+          "alpha": 0.55
+        },
+        {
+          "type": "spark",
+          "count": 7,
+          "length_px": 24,
+          "alpha": 0.52
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_FIGHTER_RENDING_EDGE_CAST",
+      "name_ru": "Рваная Кромка — применение",
+      "visual_type": "cast_slash_arc",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "bleed",
+        "slash",
+        "cast",
+        "player_version"
+      ],
+      "color": "#A01722",
+      "secondary_color": "#FF6E54",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_FIGHTER_RENDING_EDGE_IMPACT",
+      "name_ru": "Рваная Кромка — попадание",
+      "visual_type": "slash_arc",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "bleed",
+        "slash",
+        "impact",
+        "player_version"
+      ],
+      "color": "#A01722",
+      "secondary_color": "#FF6E54",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "arc",
+          "radius_px": 54,
+          "alpha": 0.74,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 20,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_WARRIOR_BONEFALL_CAST",
+      "name_ru": "Костоломный Обвал — применение",
+      "visual_type": "cast_falling_impact",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "bone",
+        "slow",
+        "cast",
+        "player_version"
+      ],
+      "color": "#57443D",
+      "secondary_color": "#E8D8B9",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_WARRIOR_BONEFALL_DELAYED",
+      "name_ru": "Костоломный Обвал — задержка",
+      "visual_type": "falling_impact",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "bone",
+        "slow",
+        "delayed",
+        "player_version"
+      ],
+      "color": "#57443D",
+      "secondary_color": "#E8D8B9",
+      "duration": 0.52,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "telegraph_ring",
+          "radius_px": 54,
+          "alpha": 0.35
+        },
+        {
+          "type": "falling_line",
+          "length_px": 86,
+          "alpha": 0.78
+        },
+        {
+          "type": "spark",
+          "count": 8,
+          "length_px": 22,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_WARRIOR_BONEFALL_IMPACT",
+      "name_ru": "Костоломный Обвал — попадание",
+      "visual_type": "falling_impact",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "bone",
+        "slow",
+        "impact",
+        "player_version"
+      ],
+      "color": "#57443D",
+      "secondary_color": "#E8D8B9",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "telegraph_ring",
+          "radius_px": 54,
+          "alpha": 0.35
+        },
+        {
+          "type": "falling_line",
+          "length_px": 86,
+          "alpha": 0.78
+        },
+        {
+          "type": "spark",
+          "count": 8,
+          "length_px": 22,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_WARRIOR_BONEFALL_ZONE",
+      "name_ru": "Костоломный Обвал — зона",
+      "visual_type": "puddle_zone",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "bone",
+        "slow",
+        "zone",
+        "player_version"
+      ],
+      "color": "#57443D",
+      "secondary_color": "#E8D8B9",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_WARRIOR_HEAVY_BLOW_CAST",
+      "name_ru": "Тяжёлый Удар — применение",
+      "visual_type": "cast_shockwave_circle",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "impact",
+        "armor_break",
+        "cast",
+        "player_version"
+      ],
+      "color": "#4A3333",
+      "secondary_color": "#D6D0C8",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_WARRIOR_HEAVY_BLOW_IMPACT",
+      "name_ru": "Тяжёлый Удар — попадание",
+      "visual_type": "shockwave_circle",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "impact",
+        "armor_break",
+        "impact",
+        "player_version"
+      ],
+      "color": "#4A3333",
+      "secondary_color": "#D6D0C8",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 52,
+          "expand": true,
+          "alpha": 0.58
+        },
+        {
+          "type": "spark",
+          "count": 10,
+          "length_px": 26,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_WARRIOR_SHIELD_BREAK_CAST",
+      "name_ru": "Щитовой Пролом — применение",
+      "visual_type": "cast_cone_wave",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "shield_break",
+        "cone",
+        "cast",
+        "player_version"
+      ],
+      "color": "#3B3336",
+      "secondary_color": "#E2D5C6",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_WARRIOR_SHIELD_BREAK_IMPACT",
+      "name_ru": "Щитовой Пролом — попадание",
+      "visual_type": "cone_wave",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "shield_break",
+        "cone",
+        "impact",
+        "player_version"
+      ],
+      "color": "#3B3336",
+      "secondary_color": "#E2D5C6",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "cone",
+          "radius_px": 110,
+          "angle_deg": 75,
+          "alpha": 0.32
+        },
+        {
+          "type": "arc",
+          "radius_px": 72,
+          "alpha": 0.56
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_ORC_WARRIOR_SHIELD_BREAK_TRAVEL",
+      "name_ru": "Щитовой Пролом — след",
+      "visual_type": "cone_wave",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "shield_break",
+        "cone",
+        "travel",
+        "player_version"
+      ],
+      "color": "#3B3336",
+      "secondary_color": "#E2D5C6",
+      "duration": 0.32,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "cone",
+          "radius_px": 110,
+          "angle_deg": 75,
+          "alpha": 0.32
+        },
+        {
+          "type": "arc",
+          "radius_px": 72,
+          "alpha": 0.56
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_POISON_SLIME_POISON_DROP_CAST",
+      "name_ru": "Ядовитая Капля — применение",
+      "visual_type": "cast_poison_splat",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "splat",
+        "dot",
+        "cast",
+        "player_version"
+      ],
+      "color": "#64B83A",
+      "secondary_color": "#C8FF5C",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_POISON_SLIME_POISON_DROP_IMPACT",
+      "name_ru": "Ядовитая Капля — попадание",
+      "visual_type": "poison_splat",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "splat",
+        "dot",
+        "impact",
+        "player_version"
+      ],
+      "color": "#64B83A",
+      "secondary_color": "#C8FF5C",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "splat",
+          "radius_px": 34,
+          "alpha": 0.72
+        },
+        {
+          "type": "bubble",
+          "radius_px": 44,
+          "alpha": 0.58
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_POISON_SLIME_SPORE_TRANSFER_CAST",
+      "name_ru": "Споровой Перенос — применение",
+      "visual_type": "cast_spore_trail",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "spore",
+        "trail",
+        "cast",
+        "player_version"
+      ],
+      "color": "#4BA93D",
+      "secondary_color": "#D0FF7A",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_POISON_SLIME_SPORE_TRANSFER_IMPACT",
+      "name_ru": "Споровой Перенос — попадание",
+      "visual_type": "spore_trail",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "spore",
+        "trail",
+        "impact",
+        "player_version"
+      ],
+      "color": "#4BA93D",
+      "secondary_color": "#D0FF7A",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "orb",
+          "radius_px": 24,
+          "alpha": 0.72
+        },
+        {
+          "type": "spark",
+          "count": 9,
+          "length_px": 18,
+          "alpha": 0.58
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_POISON_SLIME_SPORE_TRANSFER_TRAVEL",
+      "name_ru": "Споровой Перенос — след",
+      "visual_type": "spore_trail",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "spore",
+        "trail",
+        "travel",
+        "player_version"
+      ],
+      "color": "#4BA93D",
+      "secondary_color": "#D0FF7A",
+      "duration": 0.32,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "orb",
+          "radius_px": 24,
+          "alpha": 0.72
+        },
+        {
+          "type": "spark",
+          "count": 9,
+          "length_px": 18,
+          "alpha": 0.58
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_POISON_SLIME_SPORE_TRANSFER_ZONE",
+      "name_ru": "Споровой Перенос — зона",
+      "visual_type": "puddle_zone",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "spore",
+        "trail",
+        "zone",
+        "player_version"
+      ],
+      "color": "#4BA93D",
+      "secondary_color": "#D0FF7A",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_POISON_SLIME_TOXIC_DOME_CAST",
+      "name_ru": "Токсичный Купол — применение",
+      "visual_type": "cast_toxic_cloud",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "dome",
+        "cloud",
+        "cast",
+        "player_version"
+      ],
+      "color": "#32994B",
+      "secondary_color": "#B8FF55",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_POISON_SLIME_TOXIC_DOME_IMPACT",
+      "name_ru": "Токсичный Купол — попадание",
+      "visual_type": "toxic_cloud",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "dome",
+        "cloud",
+        "impact",
+        "player_version"
+      ],
+      "color": "#32994B",
+      "secondary_color": "#B8FF55",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_POISON_SLIME_TOXIC_DOME_ZONE",
+      "name_ru": "Токсичный Купол — зона",
+      "visual_type": "toxic_cloud",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "dome",
+        "cloud",
+        "zone",
+        "player_version"
+      ],
+      "color": "#32994B",
+      "secondary_color": "#B8FF55",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_VOID_SPIRIT_SHADOW_MARK_CAST",
+      "name_ru": "Теневая Метка — применение",
+      "visual_type": "cast_void_mark",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "void",
+        "mark",
+        "slow",
+        "cast",
+        "player_version"
+      ],
+      "color": "#6D3CFF",
+      "secondary_color": "#C7A7FF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_VOID_SPIRIT_SHADOW_MARK_IMPACT",
+      "name_ru": "Теневая Метка — попадание",
+      "visual_type": "void_mark",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "void",
+        "mark",
+        "slow",
+        "impact",
+        "player_version"
+      ],
+      "color": "#6D3CFF",
+      "secondary_color": "#C7A7FF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "rune",
+          "radius_px": 38,
+          "alpha": 0.78
+        },
+        {
+          "type": "ring",
+          "radius_px": 44,
+          "alpha": 0.48
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_VOID_SPIRIT_SPACE_RIFT_CAST",
+      "name_ru": "Разлом Пространства — применение",
+      "visual_type": "cast_void_rift",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "void",
+        "rift",
+        "pull",
+        "cast",
+        "player_version"
+      ],
+      "color": "#7E4CFF",
+      "secondary_color": "#7DEBFF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_VOID_SPIRIT_SPACE_RIFT_IMPACT",
+      "name_ru": "Разлом Пространства — попадание",
+      "visual_type": "void_rift",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "void",
+        "rift",
+        "pull",
+        "impact",
+        "player_version"
+      ],
+      "color": "#7E4CFF",
+      "secondary_color": "#7DEBFF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "crack",
+          "radius_px": 58,
+          "alpha": 0.82
+        },
+        {
+          "type": "inward",
+          "radius_px": 48,
+          "alpha": 0.54
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_VOID_SPIRIT_SPACE_RIFT_ZONE",
+      "name_ru": "Разлом Пространства — зона",
+      "visual_type": "void_rift",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "void",
+        "rift",
+        "pull",
+        "zone",
+        "player_version"
+      ],
+      "color": "#7E4CFF",
+      "secondary_color": "#7DEBFF",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "crack",
+          "radius_px": 58,
+          "alpha": 0.82
+        },
+        {
+          "type": "inward",
+          "radius_px": 48,
+          "alpha": 0.54
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_VOID_SPIRIT_VOID_COLLAPSE_CAST",
+      "name_ru": "Пустотный Коллапс — применение",
+      "visual_type": "cast_void_collapse",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "void",
+        "collapse",
+        "silence",
+        "cast",
+        "player_version"
+      ],
+      "color": "#4E2B9E",
+      "secondary_color": "#B88CFF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_VOID_SPIRIT_VOID_COLLAPSE_DELAYED",
+      "name_ru": "Пустотный Коллапс — задержка",
+      "visual_type": "void_collapse",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "void",
+        "collapse",
+        "silence",
+        "delayed",
+        "player_version"
+      ],
+      "color": "#4E2B9E",
+      "secondary_color": "#B88CFF",
+      "duration": 0.52,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "inward",
+          "radius_px": 60,
+          "alpha": 0.78
+        },
+        {
+          "type": "ring",
+          "radius_px": 48,
+          "alpha": 0.45
+        },
+        {
+          "type": "spark",
+          "count": 6,
+          "length_px": 16,
+          "alpha": 0.5
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_VOID_SPIRIT_VOID_COLLAPSE_IMPACT",
+      "name_ru": "Пустотный Коллапс — попадание",
+      "visual_type": "void_collapse",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "void",
+        "collapse",
+        "silence",
+        "impact",
+        "player_version"
+      ],
+      "color": "#4E2B9E",
+      "secondary_color": "#B88CFF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "inward",
+          "radius_px": 60,
+          "alpha": 0.78
+        },
+        {
+          "type": "ring",
+          "radius_px": 48,
+          "alpha": 0.45
+        },
+        {
+          "type": "spark",
+          "count": 6,
+          "length_px": 16,
+          "alpha": 0.5
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_VOID_SPIRIT_VOID_COLLAPSE_ZONE",
+      "name_ru": "Пустотный Коллапс — зона",
+      "visual_type": "void_collapse",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "void",
+        "collapse",
+        "silence",
+        "zone",
+        "player_version"
+      ],
+      "color": "#4E2B9E",
+      "secondary_color": "#B88CFF",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "inward",
+          "radius_px": 60,
+          "alpha": 0.78
+        },
+        {
+          "type": "ring",
+          "radius_px": 48,
+          "alpha": 0.45
+        },
+        {
+          "type": "spark",
+          "count": 6,
+          "length_px": 16,
+          "alpha": 0.5
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_WATER_SLIME_STICKY_PUDDLE_CAST",
+      "name_ru": "Тягучая Лужа — применение",
+      "visual_type": "cast_puddle_zone",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "water",
+        "slow",
+        "zone",
+        "cast",
+        "player_version"
+      ],
+      "color": "#2D8CFF",
+      "secondary_color": "#8FE7FF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_WATER_SLIME_STICKY_PUDDLE_IMPACT",
+      "name_ru": "Тягучая Лужа — попадание",
+      "visual_type": "puddle_zone",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "water",
+        "slow",
+        "zone",
+        "impact",
+        "player_version"
+      ],
+      "color": "#2D8CFF",
+      "secondary_color": "#8FE7FF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_WATER_SLIME_STICKY_PUDDLE_ZONE",
+      "name_ru": "Тягучая Лужа — зона",
+      "visual_type": "puddle_zone",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "water",
+        "slow",
+        "zone",
+        "zone",
+        "player_version"
+      ],
+      "color": "#2D8CFF",
+      "secondary_color": "#8FE7FF",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_WATER_SLIME_WATER_BURST_CAST",
+      "name_ru": "Водный Взрыв — применение",
+      "visual_type": "cast_circular_burst",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "water",
+        "burst",
+        "puddle",
+        "cast",
+        "player_version"
+      ],
+      "color": "#197ED6",
+      "secondary_color": "#B1F4FF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_WATER_SLIME_WATER_BURST_IMPACT",
+      "name_ru": "Водный Взрыв — попадание",
+      "visual_type": "circular_burst",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "water",
+        "burst",
+        "puddle",
+        "impact",
+        "player_version"
+      ],
+      "color": "#197ED6",
+      "secondary_color": "#B1F4FF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 52,
+          "expand": true,
+          "alpha": 0.58
+        },
+        {
+          "type": "spark",
+          "count": 10,
+          "length_px": 26,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_WATER_SLIME_WATER_BURST_ZONE",
+      "name_ru": "Водный Взрыв — зона",
+      "visual_type": "puddle_zone",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "water",
+        "burst",
+        "puddle",
+        "zone",
+        "player_version"
+      ],
+      "color": "#197ED6",
+      "secondary_color": "#B1F4FF",
+      "duration": 0.82,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 58,
+          "alpha": 0.25,
+          "expand": true
+        },
+        {
+          "type": "spiral",
+          "radius_px": 44,
+          "turns": 1.6,
+          "alpha": 0.62
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_WATER_SLIME_WATER_WAVE_CAST",
+      "name_ru": "Водяная Волна — применение",
+      "visual_type": "cast_water_wave",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "water",
+        "wave",
+        "splash",
+        "cast",
+        "player_version"
+      ],
+      "color": "#1B6EFF",
+      "secondary_color": "#A7F3FF",
+      "duration": 0.26,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "circle",
+          "radius_px": 28,
+          "alpha": 0.44,
+          "expand": true
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 18,
+          "alpha": 0.55
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_WATER_SLIME_WATER_WAVE_IMPACT",
+      "name_ru": "Водяная Волна — попадание",
+      "visual_type": "water_wave",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "water",
+        "wave",
+        "splash",
+        "impact",
+        "player_version"
+      ],
+      "color": "#1B6EFF",
+      "secondary_color": "#A7F3FF",
+      "duration": 0.34,
+      "minor_effect": false,
+      "critical_telegraph_or_impact": true,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "cone",
+          "radius_px": 110,
+          "angle_deg": 75,
+          "alpha": 0.32
+        },
+        {
+          "type": "arc",
+          "radius_px": 72,
+          "alpha": 0.56
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_PLAYER_WATER_SLIME_WATER_WAVE_TRAVEL",
+      "name_ru": "Водяная Волна — след",
+      "visual_type": "water_wave",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "water",
+        "wave",
+        "splash",
+        "travel",
+        "player_version"
+      ],
+      "color": "#1B6EFF",
+      "secondary_color": "#A7F3FF",
+      "duration": 0.32,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "cone",
+          "radius_px": 110,
+          "angle_deg": 75,
+          "alpha": 0.32
+        },
+        {
+          "type": "arc",
+          "radius_px": 72,
+          "alpha": 0.56
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_STATUS_ARMOR_BREAK_SMALL",
+      "name_ru": "Щитовой Пролом — статус",
+      "visual_type": "status_aura",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "shield_break",
+        "cone",
+        "status",
+        "player_version"
+      ],
+      "color": "#3B3336",
+      "secondary_color": "#E2D5C6",
+      "duration": 0.55,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 28,
+          "alpha": 0.46
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 12,
+          "alpha": 0.5
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_STATUS_BLEED_SMALL",
+      "name_ru": "Кровавый Рывок — статус",
+      "visual_type": "status_aura",
+      "faction_id": "FACTION_KRUSHERS",
+      "tags": [
+        "physical",
+        "bleed",
+        "dash",
+        "status",
+        "player_version"
+      ],
+      "color": "#8E1018",
+      "secondary_color": "#FF7355",
+      "duration": 0.55,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 28,
+          "alpha": 0.46
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 12,
+          "alpha": 0.5
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_STATUS_BURN_SMALL",
+      "name_ru": "Огненная Дуга — статус",
+      "visual_type": "status_aura",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "fire",
+        "arc",
+        "burn",
+        "status",
+        "player_version"
+      ],
+      "color": "#FF6E1F",
+      "secondary_color": "#FFE168",
+      "duration": 0.55,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 28,
+          "alpha": 0.46
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 12,
+          "alpha": 0.5
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_STATUS_MARK_SMALL",
+      "name_ru": "Теневая Метка — статус",
+      "visual_type": "status_aura",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "void",
+        "mark",
+        "slow",
+        "status",
+        "player_version"
+      ],
+      "color": "#6D3CFF",
+      "secondary_color": "#C7A7FF",
+      "duration": 0.55,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 28,
+          "alpha": 0.46
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 12,
+          "alpha": 0.5
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_STATUS_POISON_SMALL",
+      "name_ru": "Ядовитая Капля — статус",
+      "visual_type": "status_aura",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "splat",
+        "dot",
+        "status",
+        "player_version"
+      ],
+      "color": "#64B83A",
+      "secondary_color": "#C8FF5C",
+      "duration": 0.55,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 28,
+          "alpha": 0.46
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 12,
+          "alpha": 0.5
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_STATUS_SHOCK_SMALL",
+      "name_ru": "Малый Проводник — статус",
+      "visual_type": "status_aura",
+      "faction_id": "FACTION_ETHERS",
+      "tags": [
+        "lightning",
+        "conduit",
+        "link",
+        "status",
+        "player_version"
+      ],
+      "color": "#FFE74D",
+      "secondary_color": "#69E6FF",
+      "duration": 0.55,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 28,
+          "alpha": 0.46
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 12,
+          "alpha": 0.5
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    },
+    {
+      "id": "VFX_STATUS_SPORE_SMALL",
+      "name_ru": "Споровой Перенос — статус",
+      "visual_type": "status_aura",
+      "faction_id": "FACTION_NATURE",
+      "tags": [
+        "poison",
+        "spore",
+        "trail",
+        "status",
+        "player_version"
+      ],
+      "color": "#4BA93D",
+      "secondary_color": "#D0FF7A",
+      "duration": 0.55,
+      "minor_effect": true,
+      "critical_telegraph_or_impact": false,
+      "auto_free": true,
+      "groups": [
+        "combat_effects",
+        "room_effects"
+      ],
+      "layers": [
+        {
+          "type": "ring",
+          "radius_px": 28,
+          "alpha": 0.46
+        },
+        {
+          "type": "spark",
+          "count": 5,
+          "length_px": 12,
+          "alpha": 0.5
+        }
+      ],
+      "level_visual_overrides": {
+        "1": {
+          "scale": 1.0,
+          "extra_layers": []
+        },
+        "2": {
+          "scale": 1.08,
+          "extra_layers": [
+            "secondary_pulse"
+          ]
+        },
+        "3": {
+          "scale": 1.18,
+          "extra_layers": [
+            "breakpoint_effect"
+          ]
+        }
+      },
+      "juice": {
+        "flash": true,
+        "screen_shake": 0.0,
+        "hit_pause": 0.0
+      }
+    }
+  ],
+  "fallback_rules": [
+    {
+      "match_any_tag": [
+        "slash"
+      ],
+      "visual_id": "VISUAL_KR_SLASH"
+    },
+    {
+      "match_any_tag": [
+        "bleed",
+        "wound"
+      ],
+      "visual_id": "VISUAL_KR_WOUND_AURA"
+    },
+    {
+      "match_any_tag": [
+        "water",
+        "slow"
+      ],
+      "visual_id": "VISUAL_PR_WATER_ZONE"
+    },
+    {
+      "match_any_tag": [
+        "fire",
+        "burn"
+      ],
+      "visual_id": "VISUAL_PR_FIRE_ZONE"
+    },
+    {
+      "match_any_tag": [
+        "poison",
+        "spore"
+      ],
+      "visual_id": "VISUAL_PR_POISON_CLOUD"
+    },
+    {
+      "match_any_tag": [
+        "wind",
+        "air"
+      ],
+      "visual_id": "VISUAL_EF_WIND_SLASH"
+    },
+    {
+      "match_any_tag": [
+        "shock",
+        "lightning"
+      ],
+      "visual_id": "VISUAL_EF_LIGHTNING_CHAIN"
+    },
+    {
+      "match_any_tag": [
+        "void",
+        "rift"
+      ],
+      "visual_id": "VISUAL_EF_VOID_RIFT"
+    },
+    {
+      "match_any_tag": [
+        "zone"
+      ],
+      "visual_id": "VISUAL_GENERIC_ZONE"
+    },
+    {
+      "match_any_tag": [
+        "burst"
+      ],
+      "visual_id": "VISUAL_GENERIC_REACTION_BURST"
+    }
+  ],
+  "player_boss_ability_vfx_patch": "v0.39",
+  "max_active_effects": 60
+}

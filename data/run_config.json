@@ -1,0 +1,117 @@
+{
+  "schema_version": "core_progression_data_driven_v0.23",
+  "source_of_truth": true,
+  "floors_total": 7,
+  "rooms_by_floor": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3
+  },
+  "optional_boss_pairs": [
+    {
+      "pair_id": "pair_2_3",
+      "floors": [
+        2,
+        3
+      ]
+    },
+    {
+      "pair_id": "pair_4_5",
+      "floors": [
+        4,
+        5
+      ]
+    },
+    {
+      "pair_id": "pair_6_7",
+      "floors": [
+        6,
+        7
+      ]
+    }
+  ],
+  "final_preparation": {
+    "enabled": true,
+    "elite_waves": 1,
+    "choices": [
+      "heal",
+      "boss_ability_tuning",
+      "temporary_final_boss_buff"
+    ],
+    "returns_to_regular_rooms": false
+  },
+  "final_boss": {
+    "boss_id": "BOSS_MORGATH",
+    "name_ru": "Морграт Разломанный",
+    "starts_after_final_preparation": true,
+    "ends_run": true,
+    "grants_current_run_power": false,
+    "meta_currency_reward": "ESSENCE_CORE"
+  },
+  "boss_choice_probability_table": [
+    {
+      "seen_min": 0,
+      "seen_max": 0,
+      "card_1": {
+        "new": 1.0,
+        "echo": 0.0
+      },
+      "card_2": {
+        "new": 1.0,
+        "echo": 0.0
+      }
+    },
+    {
+      "seen_min": 1,
+      "seen_max": 2,
+      "card_1": {
+        "new": 1.0,
+        "echo": 0.0
+      },
+      "card_2": {
+        "new": 0.4,
+        "echo": 0.6
+      }
+    },
+    {
+      "seen_min": 3,
+      "seen_max": 4,
+      "card_1": {
+        "new": 0.8,
+        "echo": 0.2
+      },
+      "card_2": {
+        "new": 0.2,
+        "echo": 0.8
+      }
+    },
+    {
+      "seen_min": 5,
+      "seen_max": 6,
+      "card_1": {
+        "new": 0.6,
+        "echo": 0.4
+      },
+      "card_2": {
+        "new": 0.4,
+        "echo": 0.6
+      }
+    },
+    {
+      "seen_min": 7,
+      "seen_max": 9,
+      "card_1": {
+        "new": 0.4,
+        "echo": 0.6
+      },
+      "card_2": {
+        "new": 0.2,
+        "echo": 0.8
+      }
+    }
+  ]
+}

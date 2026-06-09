@@ -1,0 +1,4 @@
+# OBSOLETE: Do not apply. RunFlow already exists exactly once in project.godot.
+# Kept only for historical reference.
+# Add this autoload line in project.godot after BossController:
+RunFlow="*res://autoloads/run_flow.gd"

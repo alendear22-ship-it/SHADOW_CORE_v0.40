@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "description_ru": "Полная схема сохранения текущего забега после CORE Progression Rework. Meta-state не должен очищаться reset_run.",
+  "required_fields": {
+    "floor_index": "int",
+    "room_index_on_floor": "int",
+    "current_flow_state": "String",
+    "current_route_context": "Dictionary",
+    "essence_by_faction": "Dictionary",
+    "soul_ash": "int",
+    "altar_used_by_floor": "Dictionary",
+    "optional_boss_state_by_pair": "Dictionary",
+    "unique_bosses_seen_this_run": "Array[String]",
+    "unique_bosses_defeated_this_run": "Array[String]",
+    "boss_defeat_count_by_creature_type": "Dictionary",
+    "boss_ability_levels": "Dictionary",
+    "installed_boss_abilities": "Dictionary",
+    "final_preparation_started": "bool",
+    "final_preparation_completed": "bool",
+    "morgath_started": "bool",
+    "morgath_defeated": "bool",
+    "current_pending_reward": "Dictionary",
+    "current_pending_install": "Dictionary"
+  },
+  "manager_state_blocks": {
+    "RunRouteManager": "route_state",
+    "RunFlow": "run_flow_state",
+    "OptionalBossManager": "optional_boss_state / optional_boss_state_by_pair",
+    "BossChoiceManager": "boss_choice_state",
+    "AltarManager": "altar_state",
+    "SoulAshManager": "soul_ash_state",
+    "AbilitySlotManager": "ability_slots / installed_boss_abilities",
+    "BossAbilitySystem": "boss_abilities / boss_ability_levels",
+    "MobWeakAbilitySystem": "mob_weak_ability_state / boss_defeat_count_by_creature_type",
+    "EssenceBank": "essence",
+    "MetaCurrencyManager": "meta-state only; not reset by run reset",
+    "MetaProgression": "meta-state only; not reset by run reset"
+  },
+  "suspend_policy": {
+    "allowed_states": [
+      "ROOM_RUNNING",
+      "ROOM_PICKUP_CLEANUP",
+      "BOSS_RUNNING",
+      "FINAL_PREPARATION_COMBAT",
+      "MORGATH_COMBAT",
+      "RUN_RESULT",
+      "RUN_ENDED"
+    ],
+    "blocked_mid_ui_states": [
+      "ROOM_REWARD",
+      "ROOM_CARD_SELECT",
+      "ALTAR_SACRIFICE",
+      "ALTAR_REWARD_SELECT",
+      "BOSS_CHOICE_SELECT",
+      "FINAL_PREPARATION_CHOICE",
+      "CONTINUE_CHOICE"
+    ],
+    "reason_ru": "Mid-UI suspend запрещён до отдельного UI hydration-патча, чтобы после load не получить полуподключённую панель. Transient pending data сохраняется в run_flow_state для debug/recovery."
+  },
+  "reset_run_clears": [
+    "current run essence",
+    "Пепел Душ",
+    "seen/defeated bosses this run",
+    "optional boss flags",
+    "altar used floors",
+    "installed boss abilities",
+    "boss ability run levels",
+    "mob weak ability counters",
+    "route position",
+    "pending UI states"
+  ],
+  "reset_run_preserves": [
+    "Ядро эссенции",
+    "bosses_defeated_ever",
+    "meta unlocks",
+    "heroes/cosmetics"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "items": [
+    {
+      "id": "ROOM_SURVIVAL_WAVES_MVP",
+      "name": "Выживание под волнами",
+      "type": "survival_waves",
+      "duration_seconds_full_design": 90,
+      "mvp_fixed_waves": 4,
+      "wave_interval_seconds": 6,
+      "spawn_budget_per_wave": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "card_rule": {
+        "primary_weight": 0.6,
+        "secondary_weight": 0.3,
+        "hidden_weight": 0.1
+      },
+      "default_card": {
+        "primary_enemy_id": "ENEMY_KR_ORC_FIGHTER",
+        "secondary_enemy_id": "ENEMY_PR_WATER_SLIME",
+        "hidden_enemy_id": "ENEMY_EF_AIR_SPIRIT"
+      }
+    },
+    {
+      "id": "ROOM_DEFEND_OBELISK_STUB",
+      "name": "Защита обелиска",
+      "type": "defend_obelisk",
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ROOM_CLEAR_WAVES_STUB",
+      "name": "Уничтожить все волны",
+      "type": "clear_waves",
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ROOM_ESCORT_CARGO_STUB",
+      "name": "Сопровождение груза",
+      "type": "escort_cargo",
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ROOM_FIND_CACHES_STUB",
+      "name": "Поиск тайников и выход",
+      "type": "find_caches_exit",
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ROOM_LAST_PREPARATION_STUB",
+      "name": "Последняя подготовительная комната",
+      "type": "last_preparation",
+      "implemented_in_mvp": false,
+      "source_rule": {
+        "type": "Особая подготовительная комната перед финальным боссом.",
+        "player_knows_enemies_before_entry": false,
+        "player_selects_room": false,
+        "purpose": "Дать игроку последний рискованный шанс добрать эссенцию и докачать способности перед финальным боссом.",
+        "enemies": [
+          "Много мелких противников",
+          "2-3 сильных элитных врага, ранее не встречавшихся на этажах"
+        ],
+        "elite_rules": {
+          "two_elites": {
+            "power": "Каждый около 50% силы босса этажа.",
+            "reward_each": [
+              "5 фракционной эссенции",
+              "2 осколка ядра своей фракции"
+            ]
+          },
+          "three_elites": {
+            "power": "Каждый около 40% силы босса этажа.",
+            "reward_each": [
+              "4 фракционной эссенции",
+              "1 осколок фракции"
+            ]
+          }
+        },
+        "after_clear": "После зачистки игрок получает возможность прокачать способности."
+      }
+    }
+  ]
+}

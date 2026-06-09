@@ -1,0 +1,71 @@
+{
+  "schema_version": "core_progression_rework_prep_v0.1",
+  "source_of_truth": true,
+  "currency": "ESSENCE_CORE",
+  "migration_status": "data_driven_meta_currency_v0_23",
+  "items": [
+    {
+      "id": "META_UNLOCK_BOSS_ABILITY_SAMPLE",
+      "unlock_type": "boss_ability_unlock",
+      "name_ru": "Открытие способности босса",
+      "description_ru": "Шаблон будущего открытия способности босса за Ядро эссенции.",
+      "core_essence_cost": 1,
+      "requirements": {},
+      "payload": {
+        "collection": "boss_abilities",
+        "unlock_id": ""
+      },
+      "enabled": false
+    },
+    {
+      "id": "META_UNLOCK_HERO_SAMPLE",
+      "unlock_type": "hero_unlock",
+      "name_ru": "Открытие героя",
+      "description_ru": "Шаблон будущего открытия героя.",
+      "core_essence_cost": 2,
+      "requirements": {},
+      "payload": {
+        "collection": "heroes",
+        "unlock_id": ""
+      },
+      "enabled": false
+    },
+    {
+      "id": "META_UNLOCK_COSMETIC_SAMPLE",
+      "unlock_type": "cosmetic_unlock",
+      "name_ru": "Косметическое открытие",
+      "description_ru": "Шаблон будущего косметического открытия.",
+      "core_essence_cost": 1,
+      "requirements": {},
+      "payload": {
+        "cosmetic_id": ""
+      },
+      "enabled": false
+    },
+    {
+      "id": "META_UNLOCK_ALTERNATIVE_START_SAMPLE",
+      "unlock_type": "alternative_start",
+      "name_ru": "Альтернативный старт",
+      "description_ru": "Шаблон будущего альтернативного старта забега.",
+      "core_essence_cost": 3,
+      "requirements": {},
+      "payload": {
+        "start_config_id": ""
+      },
+      "enabled": false
+    },
+    {
+      "id": "META_UNLOCK_CODEX_ENTRY_SAMPLE",
+      "unlock_type": "codex_entry",
+      "name_ru": "Запись кодекса",
+      "description_ru": "Шаблон будущей записи кодекса.",
+      "core_essence_cost": 0,
+      "requirements": {},
+      "payload": {
+        "codex_entry_id": ""
+      },
+      "enabled": false
+    }
+  ],
+  "storage_key": "core_essence"
+}

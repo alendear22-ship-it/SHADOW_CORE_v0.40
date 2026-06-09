@@ -1,0 +1,39 @@
+{
+  "faction_counter_to_core": 100,
+  "core_shards_to_core": 10,
+  "hero_level_min": 1,
+  "hero_level_max": 10,
+  "soul_ash_scope": "run_resource_active",
+  "suspend_checkpoint_after_floor_boss_number": 2,
+  "save_files": {
+    "meta": "user://shadow_core_meta_save.json",
+    "suspend": "user://shadow_core_suspend_save.json"
+  },
+  "schema_version": "core_meta_progression_data_driven_v0.23",
+  "meta_currency": {
+    "currency_id": "ESSENCE_CORE",
+    "storage_key": "core_essence",
+    "name_ru": "Ядро эссенции",
+    "source": "Победа над Моргратом",
+    "allowed_uses": [
+      "unlock boss abilities",
+      "heroes",
+      "cosmetics",
+      "alternative starts",
+      "codex",
+      "modes"
+    ],
+    "forbidden_uses": [
+      "permanent base damage",
+      "permanent base HP",
+      "permanent raw stat growth"
+    ],
+    "persistent_storage": "MetaProgression.essence_core / core_essence"
+  },
+  "persistent_boss_memory": {
+    "bosses_defeated_ever": [],
+    "boss_abilities_seen": [],
+    "boss_abilities_unlocked_meta": [],
+    "notes": "Runtime values are stored in user://shadow_core_meta_save.json by MetaProgression. This schema documents the persistent keys and their purpose."
+  }
+}

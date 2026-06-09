@@ -1,0 +1,247 @@
+{
+  "items": [
+    {
+      "id": "ELITE_KR_ORC_FIGHTER_BERSERK",
+      "name": "Орк-боец Берсерк",
+      "stats_changes": {
+        "hp": "+60%",
+        "movement_speed": "+10%"
+      },
+      "special": "После потери 50% HP получает +15% скорости атаки.",
+      "essence_reward": "3 эссенции Орка-бойца",
+      "limits": [
+        "Не появляется массово.",
+        "Максимум 1–2 на комнату на раннем этапе."
+      ],
+      "base_enemy_id": "ENEMY_KR_ORC_FIGHTER",
+      "faction_id": "FACTION_KRUSHERS",
+      "faction_name": "Крушители",
+      "creature_type_id": "CREATURE_KR_ORC_FIGHTER",
+      "creature_type_name": "Орк-боец",
+      "threat_weight": 2.0,
+      "essence_amount": 3,
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ELITE_KR_ORC_WARRIOR_PANZIRNIK",
+      "name": "Орк-воин Панцирник",
+      "stats_changes": {
+        "hp": "+70%",
+        "armor": "+8"
+      },
+      "special": "После каждых 3 полученных ударов активной способностью получает щит на 2 сек.",
+      "shield_rule": "Щит снижает урон автоатаки на 40%, но активные способности проходят нормально.",
+      "essence_reward": "4 эссенции Орка-воина",
+      "base_enemy_id": "ENEMY_KR_ORC_WARRIOR",
+      "faction_id": "FACTION_KRUSHERS",
+      "faction_name": "Крушители",
+      "creature_type_id": "CREATURE_KR_ORC_WARRIOR",
+      "creature_type_name": "Орк-воин",
+      "threat_weight": 2.5,
+      "essence_amount": 4,
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ELITE_KR_ORC_COMMANDER_BANNER",
+      "name": "Орк-командир Знаменосец",
+      "stats_changes": {
+        "hp": "+80%"
+      },
+      "special": "Создаёт знамя на 6 сек.",
+      "banner": {
+        "radius_m": 3.5,
+        "effect": "Враги-Крушители внутри получают -15% входящего урона от автоатаки.",
+        "active_ability_rule": "Активные способности наносят полный урон.",
+        "destructible": "Знамя можно уничтожить активными способностями.",
+        "hp_rule": "Знамя не должно иметь слишком много HP."
+      },
+      "essence_reward": "5 эссенции Орка-командира",
+      "limits": [
+        "Одновременно максимум 1 знамя от одного Знаменосца."
+      ],
+      "base_enemy_id": "ENEMY_KR_ORC_COMMANDER",
+      "faction_id": "FACTION_KRUSHERS",
+      "faction_name": "Крушители",
+      "creature_type_id": "CREATURE_KR_ORC_COMMANDER",
+      "creature_type_name": "Орк-командир",
+      "threat_weight": 4.4,
+      "essence_amount": 5,
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ELITE_PR_WATER_SLIME_OMUT",
+      "name": "Водный слайм Омут",
+      "stats_changes": {
+        "hp": "+70%",
+        "attack_range": "+0.5 м"
+      },
+      "essence_reward": "3 эссенции Водного слайма",
+      "special": "Каждый третий Водяной плевок создаёт малый омут.",
+      "small_whirlpool": {
+        "radius_m": 1.8,
+        "duration_seconds": 3.5,
+        "slow_percent": 22,
+        "extra": "Если игрок стоит больше 1.2 сек., -10% скорости атаки/каста на 2 сек."
+      },
+      "limits": [
+        "Максимум 2 малых омута от элитных Водных слаймов.",
+        "Омут не притягивает игрока."
+      ],
+      "base_enemy_id": "ENEMY_PR_WATER_SLIME",
+      "faction_id": "FACTION_NATURE",
+      "faction_name": "Природа",
+      "creature_type_id": "CREATURE_PR_WATER_SLIME",
+      "creature_type_name": "Водный слайм",
+      "threat_weight": 2.0,
+      "essence_amount": 3,
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ELITE_PR_FIRE_SLIME_ZHARNIK",
+      "name": "Огненный слайм Жарник",
+      "stats_changes": {
+        "hp": "+60%",
+        "movement_speed": "+5%"
+      },
+      "essence_reward": "3 эссенции Огненного слайма",
+      "special": "Каждое третье огненное пятно через 2 сек. взрывается.",
+      "explosion": {
+        "radius_m": 1.8,
+        "damage": "средний магический",
+        "telegraph": "пятно ярко пульсирует за 0.7 сек."
+      },
+      "limits": [
+        "Взрывы не запускают другие взрывы.",
+        "Максимум 2 заряженных пятна от элитных Огненных слаймов."
+      ],
+      "base_enemy_id": "ENEMY_PR_FIRE_SLIME",
+      "faction_id": "FACTION_NATURE",
+      "faction_name": "Природа",
+      "creature_type_id": "CREATURE_PR_FIRE_SLIME",
+      "creature_type_name": "Огненный слайм",
+      "threat_weight": 2.4,
+      "essence_amount": 3,
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ELITE_PR_POISON_SLIME_SPOROVIK",
+      "name": "Ядовитый слайм Споровик",
+      "stats_changes": {
+        "hp": "+75%",
+        "attack_range": "+0.4 м"
+      },
+      "essence_reward": "4 эссенции Ядовитого слайма",
+      "death_effect": "при смерти выпускает 3 споровых облака",
+      "spore_clouds": {
+        "radius_each_m": 1.4,
+        "duration_seconds": 3,
+        "effect": "накладывают яд как обычное облако"
+      },
+      "additional_ability": {
+        "name": "Токсичный пузырь",
+        "cooldown_seconds": 9,
+        "effect": "медленно движется к игроку; активная способность лопает безопасно; иначе лопается токсичным облаком",
+        "limits": [
+          "Максимум 2 пузыря от Споровиков.",
+          "Пузыри не дают мета-прогресс."
+        ]
+      },
+      "base_enemy_id": "ENEMY_PR_POISON_SLIME",
+      "faction_id": "FACTION_NATURE",
+      "faction_name": "Природа",
+      "creature_type_id": "CREATURE_PR_POISON_SLIME",
+      "creature_type_name": "Ядовитый слайм",
+      "threat_weight": 3.6,
+      "essence_amount": 4,
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ELITE_EF_AIR_STORM_CUTTER",
+      "name": "Дух воздуха Штормовой резчик",
+      "stats_changes": {
+        "hp": "+60%",
+        "movement_speed": "+8%"
+      },
+      "essence_reward": "3 эссенции Духа воздуха",
+      "special": "Каждый третий Воздушный порез становится двойным.",
+      "double_cut": {
+        "second_line_delay_seconds": 0.35,
+        "angle_to_first_degrees": 30
+      },
+      "limits": [
+        "Двойной порез читаемый.",
+        "Максимум 2 Штормовых резчика в обычной комнате.",
+        "Не создаёт сетку без выхода."
+      ],
+      "base_enemy_id": "ENEMY_EF_AIR_SPIRIT",
+      "faction_id": "FACTION_ETHERS",
+      "faction_name": "Эфиры",
+      "creature_type_id": "CREATURE_EF_AIR_SPIRIT",
+      "creature_type_name": "Дух воздуха",
+      "threat_weight": 2.4,
+      "essence_amount": 3,
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ELITE_EF_LIGHTNING_STORM_NODE",
+      "name": "Дух молний Грозовой узел",
+      "stats_changes": {
+        "hp": "+70%",
+        "attack_range": "+0.5 м"
+      },
+      "essence_reward": "4 эссенции Духа молний",
+      "specials": [
+        "Создаёт 2 проводника вместо 1.",
+        "Каждый третий Искровой болт раздваивается."
+      ],
+      "split_bolt": {
+        "first": "летит прямо",
+        "second": "через 0.3 сек. с лёгким предсказанием движения игрока"
+      },
+      "limits": [
+        "Предсказание не идеальное.",
+        "Максимум 1 Грозовой узел в обычной комнате.",
+        "Проводники не запирают без выхода."
+      ],
+      "base_enemy_id": "ENEMY_EF_LIGHTNING_SPIRIT",
+      "faction_id": "FACTION_ETHERS",
+      "faction_name": "Эфиры",
+      "creature_type_id": "CREATURE_EF_LIGHTNING_SPIRIT",
+      "creature_type_name": "Дух молний",
+      "threat_weight": 3.6,
+      "essence_amount": 4,
+      "implemented_in_mvp": false
+    },
+    {
+      "id": "ELITE_EF_VOID_RIFTER",
+      "name": "Дух пустоты Разломник",
+      "stats_changes": {
+        "hp": "+80%",
+        "attack_range": "+0.4 м"
+      },
+      "essence_reward": "4 эссенции Духа пустоты",
+      "specials": [
+        "Малый разлом становится двойным.",
+        "Может создать 2 фантома вместо 1."
+      ],
+      "double_rift": {
+        "first": "под текущей позицией игрока",
+        "second": "с небольшим предсказанием направления"
+      },
+      "phantom_rule": "Только один фантом атакует; второй исчезает через 1 сек. и оставляет малый след.",
+      "limits": [
+        "Максимум 1 Разломник в обычной комнате.",
+        "Фантомы отличимы.",
+        "Двойной разлом имеет читаемые телеграфы."
+      ],
+      "base_enemy_id": "ENEMY_EF_VOID_SPIRIT",
+      "faction_id": "FACTION_ETHERS",
+      "faction_name": "Эфиры",
+      "creature_type_id": "CREATURE_EF_VOID_SPIRIT",
+      "creature_type_name": "Дух пустоты",
+      "threat_weight": 4.4,
+      "essence_amount": 4,
+      "implemented_in_mvp": false
+    }
+  ]
+}

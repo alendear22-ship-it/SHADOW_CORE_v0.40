@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3]
+[ext_resource type="Script" path="res://scripts/bosses/boss_base.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/combat/health_component.gd" id="2"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_boss"]
+radius = 34.0
+[node name="BossBase" type="CharacterBody2D" groups=["bosses", "enemies"]]
+script = ExtResource("1")
+[node name="Visual" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, -42, 36, -10, 26, 36, -26, 36, -36, -10)
+color = Color(0.45, 0.08, 0.08, 1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_boss")
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("2")

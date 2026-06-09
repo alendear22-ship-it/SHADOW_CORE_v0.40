@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3]
+[ext_resource type="Script" path="res://scripts/enemies/enemy_base.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/combat/health_component.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/combat/status_effect_component.gd" id="3"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_enemy"]
+radius = 14.0
+[node name="OrcFighter" type="CharacterBody2D" groups=["enemies"]]
+script = ExtResource("1")
+enemy_id = "ENEMY_KR_ORC_FIGHTER"
+[node name="Visual" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, -16, 16, 0, 0, 16, -16, 0)
+color = Color(0.55, 0.18, 0.16, 1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_enemy")
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("2")
+[node name="StatusEffectComponent" type="Node" parent="."]
+script = ExtResource("3")

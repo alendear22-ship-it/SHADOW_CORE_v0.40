@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/effects/water_puddle_zone.gd" id="1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_puddle"]
+radius = 64.0
+
+[node name="WaterPuddleZone" type="Area2D"]
+script = ExtResource("1")
+monitoring = true
+monitorable = true
+
+[node name="Visual" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(64, 0, 45.2548, 45.2548, 0, 64, -45.2548, 45.2548, -64, 0, -45.2548, -45.2548, 0, -64, 45.2548, -45.2548)
+color = Color(0.1, 0.35, 0.85, 0.28)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_puddle")

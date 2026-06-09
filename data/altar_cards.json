@@ -1,0 +1,245 @@
+{
+  "schema_version": "altar_cards_v0.25_active_pool_cleanup",
+  "source_of_truth": true,
+  "migration_status": "reroll_service_removed_from_active_pool_v0.25",
+  "items": [
+    {
+      "id": "ALTAR_CARD_WEAPON_UPGRADE",
+      "card_type": "weapon_upgrade",
+      "name_ru": "Усиление оружия",
+      "description_ru": "Повышает выбранную ветку оружия Каэла на +1 уровень через Алтарь.",
+      "enabled": true,
+      "effect_data": {
+        "upgrade_family": "weapon",
+        "amount": 1,
+        "upgrade_rule": "+1_level_to_selected_branch",
+        "weapon_branches": [
+          {
+            "branch_id": "shadow_blade",
+            "name_ru": "Теневая сечка",
+            "target": "auto_attack"
+          },
+          {
+            "branch_id": "shadow_dagger",
+            "name_ru": "Теневой кинжал",
+            "target": "active_1"
+          },
+          {
+            "branch_id": "shadow_scythe",
+            "name_ru": "Серп Тени",
+            "target": "active_2"
+          },
+          {
+            "branch_id": "shadow_rupture",
+            "name_ru": "Разлом Тени",
+            "target": "ultimate"
+          }
+        ]
+      },
+      "main_flow": true,
+      "source": "altar",
+      "rarity_weights": {
+        "weak": 1,
+        "medium": 1,
+        "strong": 1
+      },
+      "title_ru": "Усиление оружия",
+      "effect_payload": {
+        "handler": "AltarManager._apply_weapon_card",
+        "upgrade_family": "weapon",
+        "amount": 1,
+        "requires_player_choice": false
+      },
+      "icon_profile": {
+        "glyph": "shuriken_upgrade",
+        "base_color": "#211820",
+        "accent_color": "#FFD15E",
+        "background": "radial_gradient",
+        "frame": "gold_rune",
+        "shape_language": "altar_weapon",
+        "rarity_ring": true
+      }
+    },
+    {
+      "id": "ALTAR_CARD_STAT_UPGRADE",
+      "card_type": "stat_upgrade",
+      "name_ru": "Усиление характеристик",
+      "description_ru": "Даёт слабое или среднее усиление характеристики через карточку Алтаря.",
+      "enabled": true,
+      "effect_data": {
+        "upgrade_family": "stat",
+        "amount": 1,
+        "allowed_strengths": [
+          "weak",
+          "medium"
+        ],
+        "source_system": "AltarCardGenerator -> StatUpgradeSystem.grant_free_upgrade"
+      },
+      "main_flow": true,
+      "source": "altar",
+      "rarity_weights": {
+        "weak": 1,
+        "medium": 1,
+        "strong": 1
+      },
+      "title_ru": "Усиление характеристик",
+      "effect_payload": {
+        "handler": "AltarManager._apply_stat_card",
+        "upgrade_family": "stat",
+        "allowed_strengths": [
+          "weak",
+          "medium"
+        ],
+        "requires_player_choice": false
+      },
+      "icon_profile": {
+        "glyph": "stat_arrow",
+        "base_color": "#142B2A",
+        "accent_color": "#74E6A2",
+        "background": "radial_gradient",
+        "frame": "rune_frame",
+        "shape_language": "altar_stat",
+        "rarity_ring": false
+      }
+    },
+    {
+      "id": "ALTAR_CARD_BOSS_ABILITY_UPGRADE",
+      "card_type": "boss_ability_upgrade",
+      "name_ru": "Усиление способности босса",
+      "description_ru": "Повышает уровень уже доступной способности босса, если есть допустимая цель.",
+      "enabled": true,
+      "effect_data": {
+        "upgrade_family": "boss_ability",
+        "level_delta": 1,
+        "source_collection": "boss_abilities"
+      },
+      "main_flow": true,
+      "source": "altar",
+      "rarity_weights": {
+        "weak": 1,
+        "medium": 1,
+        "strong": 1
+      },
+      "title_ru": "Усиление способности босса",
+      "effect_payload": {
+        "handler": "AltarManager._apply_boss_ability_card",
+        "upgrade_family": "boss_ability",
+        "level_delta": 1,
+        "requires_unlocked_candidate": true
+      },
+      "icon_profile": {
+        "glyph": "boss_rune_up",
+        "base_color": "#1C1430",
+        "accent_color": "#B88CFF",
+        "background": "radial_gradient",
+        "frame": "faction_mixed",
+        "shape_language": "altar_boss",
+        "rarity_ring": true
+      }
+    },
+    {
+      "id": "ALTAR_CARD_HEAL",
+      "card_type": "heal",
+      "name_ru": "Исцеление",
+      "description_ru": "Восстанавливает часть здоровья героя.",
+      "enabled": true,
+      "effect_data": {
+        "heal_percent": 25
+      },
+      "main_flow": true,
+      "source": "altar",
+      "rarity_weights": {
+        "weak": 1,
+        "medium": 1,
+        "strong": 1
+      },
+      "title_ru": "Исцеление",
+      "effect_payload": {
+        "handler": "AltarManager._apply_heal_card",
+        "heal_percent_by_strength": {
+          "weak": 25,
+          "medium": 40,
+          "strong": 60
+        }
+      },
+      "icon_profile": {
+        "glyph": "heart_rune",
+        "base_color": "#11291B",
+        "accent_color": "#72F0A2",
+        "background": "radial_gradient",
+        "frame": "rune_frame",
+        "shape_language": "altar_heal",
+        "rarity_ring": false
+      }
+    },
+    {
+      "id": "ALTAR_CARD_REROLL",
+      "card_type": "reroll",
+      "name_ru": "Переброс",
+      "description_ru": "Карточка Алтаря: перебрасывает текущие 3 карты Алтаря. Отключено из активного набора до полноценной реализации интерфейса, применения и сохранения.",
+      "enabled": false,
+      "effect_data": {
+        "reroll_count": 1
+      },
+      "main_flow": false,
+      "source": "altar",
+      "rarity_weights": {
+        "weak": 1,
+        "medium": 1,
+        "strong": 1
+      },
+      "title_ru": "Переброс",
+      "legacy_status": "disabled_until_full_apply_logic",
+      "icon_profile": {
+        "glyph": "circular_arrows",
+        "base_color": "#1D2530",
+        "accent_color": "#79D7FF",
+        "background": "radial_gradient",
+        "frame": "rune_frame",
+        "shape_language": "altar_service",
+        "rarity_ring": false
+      }
+    },
+    {
+      "id": "ALTAR_CARD_SERVICE",
+      "card_type": "service",
+      "name_ru": "Сервис Алтаря",
+      "description_ru": "Карточка Алтаря: сервисный эффект без отдельного магазина наград. Отключено из активного набора до полноценной реализации интерфейса, применения и сохранения.",
+      "enabled": false,
+      "effect_data": {
+        "service_options": [
+          "heal",
+          "reroll"
+        ]
+      },
+      "main_flow": false,
+      "source": "altar",
+      "rarity_weights": {
+        "weak": 1,
+        "medium": 1,
+        "strong": 1
+      },
+      "title_ru": "Сервис Алтаря",
+      "legacy_status": "disabled_until_full_apply_logic",
+      "icon_profile": {
+        "glyph": "altar_eye",
+        "base_color": "#24162E",
+        "accent_color": "#D88CFF",
+        "background": "radial_gradient",
+        "frame": "rune_frame",
+        "shape_language": "altar_service",
+        "rarity_ring": false
+      }
+    }
+  ],
+  "active_card_types": [
+    "weapon_upgrade",
+    "stat_upgrade",
+    "boss_ability_upgrade",
+    "heal"
+  ],
+  "disabled_card_types": [
+    "reroll",
+    "service"
+  ]
+}
